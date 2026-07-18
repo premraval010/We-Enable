@@ -75,7 +75,12 @@ export function PartnershipForm() {
           aria-describedby={state.errors?.message ? "p-message-error" : undefined}
         />
       </Field>
-      <SubmitButton />
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <SubmitButton />
+        <p className="text-xs text-muted">
+          Our partnerships team will reach out to scope a conversation.
+        </p>
+      </div>
       <FormStatus ok={state.ok} message={state.message} />
     </form>
   );

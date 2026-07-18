@@ -135,7 +135,12 @@ export function VolunteerForm() {
         </Field>
       </div>
 
-      <SubmitButton />
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <SubmitButton />
+        <p className="text-xs text-muted">
+          No résumé needed. We&rsquo;ll follow up with a match.
+        </p>
+      </div>
       <FormStatus ok={state.ok} message={state.message} />
     </form>
   );

@@ -90,7 +90,12 @@ export function ContactForm() {
           aria-describedby={state.errors?.message ? "message-error" : undefined}
         />
       </Field>
-      <SubmitButton />
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <SubmitButton />
+        <p className="text-xs text-muted">
+          A real person replies within two business days.
+        </p>
+      </div>
       <FormStatus ok={state.ok} message={state.message} />
     </form>
   );

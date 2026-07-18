@@ -95,6 +95,34 @@ export default function PrivacyPage() {
                 click, and change or cancel a recurring donation at any time. To
                 exercise any of these rights, email us and we will act on it.
               </p>
+              <p>
+                Depending on where you live, you may have additional rights under
+                laws such as the EU/UK General Data Protection Regulation (GDPR)
+                and the California Consumer Privacy Act (CCPA/CPRA). We honour those
+                rights regardless of where you are based, including access,
+                correction, deletion, and the right to object.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-extrabold sm:text-3xl">
+              For institutional partners
+            </h2>
+            <div className="mt-4 space-y-4 text-lg leading-relaxed text-muted">
+              <p>
+                Corporate, government, and foundation partners whose legal or
+                procurement teams require a Data Processing Agreement (DPA) can
+                request one from{" "}
+                <a
+                  href={`mailto:${org.emails.privacy}?subject=Data Processing Agreement`}
+                  className="font-semibold text-teal-text underline underline-offset-4"
+                >
+                  {org.emails.privacy}
+                </a>
+                . We can also share our security posture and sub-processor list on
+                request.
+              </p>
             </div>
           </div>
 

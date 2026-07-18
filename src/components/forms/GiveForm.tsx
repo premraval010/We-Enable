@@ -70,7 +70,12 @@ export function GiveForm() {
       <Field id="g-message" label="Anything we should know? (optional)">
         <Textarea id="g-message" name="message" className="min-h-24" />
       </Field>
-      <SubmitButton />
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <SubmitButton />
+        <p className="text-xs text-muted">
+          We&rsquo;ll email you within two business days to complete your gift securely.
+        </p>
+      </div>
       <FormStatus ok={state.ok} message={state.message} />
     </form>
   );
