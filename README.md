@@ -14,7 +14,7 @@ Premium, optimistic, evidence-led. Dignity, not pity. Systems, not sympathy.
 - **shadcn-style primitives** built on Radix (Button, Input, Select, Accordion, Tabs, Label), restyled with brand tokens.
 - **next/font** self-hosts Manrope (headings) and Public Sans (body) — no runtime font CDN.
 - Scroll reveals via a CSS + `IntersectionObserver` `Reveal` component (respects `prefers-reduced-motion`).
-- **zod**-validated server actions for all forms (currently log + return success; Phase 2 wires email/CRM).
+- **zod**-validated server actions for all forms, delivering submissions via **Resend** email (`src/lib/email.ts`). Without a `RESEND_API_KEY` they degrade to logging, so previews still work.
 - SEO: per-page metadata helper, JSON-LD (NGO, WebSite, Breadcrumb, Article, Event, FAQ), generated OG images, sitemap + robots.
 - A11y: WCAG 2.2 AA target, `eslint-plugin-jsx-a11y` (strict rules) + `@axe-core/playwright` over every route (zero violations).
 
@@ -76,7 +76,11 @@ brand SVG illustrations live in `src/components/illustrations/`.
 Zero-config. Import the repo into Vercel and:
 
 1. Set the production domain to **weenable.org**.
-2. Set env var `NEXT_PUBLIC_SITE_URL=https://weenable.org` (Production).
+2. Set env vars (Production):
+   - `NEXT_PUBLIC_SITE_URL=https://weenable.org`
+   - `RESEND_API_KEY=…` (form email delivery)
+   - `RESEND_FROM="WeEnable <noreply@weenable.org>"` (weenable.org is verified in Resend)
+   - Do **not** set `NOTIFICATIONS_TO` in production — that override routes all form mail to one address (local testing only).
 3. Deploy. Security headers (CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy,
    HSTS) are configured in `next.config.ts` and apply automatically.
 

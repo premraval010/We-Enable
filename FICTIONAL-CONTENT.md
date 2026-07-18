@@ -34,7 +34,7 @@ illustrative and tracked here.
 | Impact quote cards | `src/app/impact/page.tsx` | Mirror the stories above (Bengaluru / Nairobi / São Paulo). |
 | Program micro-stats | `src/content/programs.ts` → each `stat`/`barrier` sourced "WeEnable" or "program participant" | Illustrative program-level values (e.g. caregiver "2 hrs", arts "100%", policy "1 clause"). |
 | Partner strip | `src/components/sections/PartnerStrip.tsx` | Neutral "coming soon" placeholders — no fake logos. Replace with confirmed partners. |
-| Forms | `src/lib/actions.ts` | Validate + log; wire to real email/CRM (Phase 2). |
+| Forms | `src/lib/actions.ts` + `src/lib/email.ts` | Wired to **Resend** — submissions email the team (contact/volunteer/giving→hello@, partnership→partners@). Needs `RESEND_API_KEY` + `RESEND_FROM` env vars set in Vercel. Newsletter currently emails a signup notification (upgrade to a Resend Audience later). |
 
 ## Verify (carried from Creating Abilities — confirm still current)
 

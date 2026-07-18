@@ -2,6 +2,8 @@
 
 import { z } from "zod";
 import type { FormState } from "./form-state";
+import { sendNotification } from "./email";
+import { org } from "@/content/site";
 
 /** Flatten a ZodError into a simple field→message map. */
 function fieldErrors(error: z.ZodError): Record<string, string> {
@@ -11,6 +13,14 @@ function fieldErrors(error: z.ZodError): Record<string, string> {
     if (!out[key]) out[key] = issue.message;
   }
   return out;
+}
+
+/** Standard error state when email delivery fails. */
+function deliveryFailed(inbox: string): FormState {
+  return {
+    ok: false,
+    message: `Sorry — we couldn't send that just now. Please email us directly at ${inbox}.`,
+  };
 }
 
 const email = z.string().trim().email("Enter a valid email address.");
@@ -30,8 +40,17 @@ export async function subscribeNewsletter(
   if (!parsed.success) {
     return { ok: false, message: "Please check your email.", errors: fieldErrors(parsed.error) };
   }
-  // Phase 2: connect an email provider. For now, log and confirm.
-  console.info("[newsletter] subscribe", parsed.data.email);
+
+  // Interim: notify the team of the signup. Later this can push into a Resend
+  // Audience (resend.contacts.create) or a dedicated newsletter provider.
+  const { ok } = await sendNotification({
+    to: org.emails.general,
+    replyTo: parsed.data.email,
+    subject: "New newsletter subscriber",
+    text: `New newsletter signup: ${parsed.data.email}`,
+  });
+  if (!ok) return deliveryFailed(org.emails.general);
+
   return {
     ok: true,
     message: "You're on the list. One email a month, nothing else.",
@@ -65,8 +84,23 @@ export async function submitGivingEnquiry(
       errors: fieldErrors(parsed.error),
     };
   }
-  // Phase 2: connect the giving platform / CRM. For now, log and confirm.
-  console.info("[giving] enquiry", parsed.data);
+
+  const { name, email: from, program, amount, message } = parsed.data;
+  const { ok } = await sendNotification({
+    to: org.emails.general,
+    replyTo: from,
+    subject: `New giving enquiry — ${program}`,
+    text: [
+      `Name: ${name}`,
+      `Email: ${from}`,
+      `Program: ${program}`,
+      `Amount: ${amount || "(not specified)"}`,
+      "",
+      message || "(no message)",
+    ].join("\n"),
+  });
+  if (!ok) return deliveryFailed(org.emails.general);
+
   return {
     ok: true,
     message:
@@ -99,7 +133,16 @@ export async function submitContact(
       errors: fieldErrors(parsed.error),
     };
   }
-  console.info("[contact] submission", parsed.data);
+
+  const { name, email: from, topic, message } = parsed.data;
+  const { ok } = await sendNotification({
+    to: org.emails.general,
+    replyTo: from,
+    subject: `New contact (${topic})`,
+    text: `Name: ${name}\nEmail: ${from}\nTopic: ${topic}\n\n${message}`,
+  });
+  if (!ok) return deliveryFailed(org.emails.general);
+
   return {
     ok: true,
     message: "Thank you. Someone on our team will reply within two business days.",
@@ -133,7 +176,22 @@ export async function submitVolunteer(
       errors: fieldErrors(parsed.error),
     };
   }
-  console.info("[volunteer] application", parsed.data);
+
+  const { name, email: from, skills, availability, location } = parsed.data;
+  const { ok } = await sendNotification({
+    to: org.emails.general,
+    replyTo: from,
+    subject: "New volunteer application",
+    text: [
+      `Name: ${name}`,
+      `Email: ${from}`,
+      `Skills: ${skills}`,
+      `Availability: ${availability}`,
+      `Location: ${location}`,
+    ].join("\n"),
+  });
+  if (!ok) return deliveryFailed(org.emails.general);
+
   return {
     ok: true,
     message: "Thanks for stepping up. We'll be in touch with a match shortly.",
@@ -165,7 +223,16 @@ export async function submitPartnership(
       errors: fieldErrors(parsed.error),
     };
   }
-  console.info("[partnership] inquiry", parsed.data);
+
+  const { organisation, email: from, orgType, message } = parsed.data;
+  const { ok } = await sendNotification({
+    to: org.emails.partners,
+    replyTo: from,
+    subject: `New partnership enquiry — ${organisation}`,
+    text: `Organisation: ${organisation}\nType: ${orgType}\nEmail: ${from}\n\n${message}`,
+  });
+  if (!ok) return deliveryFailed(org.emails.partners);
+
   return {
     ok: true,
     message: "Received. Our partnerships team will reach out to scope a conversation.",

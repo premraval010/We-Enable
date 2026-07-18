@@ -34,7 +34,8 @@ deferred (see below).
   pages, Impact, Stories, Partnerships, Donate, Volunteer, Careers, Newsroom + 7 articles,
   Events, Contact, Accessibility, Privacy, Terms, FAQ, Resources, branded 404.
 - **Forms** — Contact, Volunteer, Partnership, Giving enquiry, Newsletter → zod-validated
-  server actions with `aria-live` feedback.
+  server actions with `aria-live` feedback, **delivering via Resend** (verified end-to-end).
+  Set `RESEND_API_KEY` + `RESEND_FROM` in Vercel to enable in production.
 - **SEO** — per-page metadata + canonical + OG/Twitter, JSON-LD (NGO, WebSite, Breadcrumb,
   Article, Event, FAQ), sitemap.xml + robots.txt.
 - **Accessibility** — WCAG 2.2 AA; strict jsx-a11y lint; axe over every route = 0 violations

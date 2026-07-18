@@ -43,14 +43,18 @@ the rest of the site.
 
 Portals should be `robots: noindex` and excluded from the sitemap.
 
-## 3. Forms (contact, volunteer, partnership, giving enquiry, newsletter)
+## 3. Forms (contact, volunteer, partnership, giving enquiry, newsletter) — DONE
 
-**Today:** every form posts to a zod-validated server action in `src/lib/actions.ts`
-that logs and returns a typed `FormState` (surfaced via `aria-live`).
+Forms are wired to **Resend**. Each zod-validated server action in `src/lib/actions.ts`
+calls `sendNotification()` in `src/lib/email.ts`, which emails the relevant inbox and
+returns whether the send succeeded (so a failure surfaces as an error, not a false
+"thanks"). Env: `RESEND_API_KEY`, optional `RESEND_FROM` (verified sender) and
+`NOTIFICATIONS_TO` (route everything to one address). Without a key it degrades to
+logging, so previews still work.
 
-**Phase 2:** implement a small `Notifier` interface (e.g. `send(payload)`) with an
-email/CRM-backed implementation, and call it from each action after validation. No
-component changes — the actions already own I/O.
+Remaining nicety: the **newsletter** currently emails a "new subscriber" notification.
+To manage a real list, swap that call for `resend.contacts.create({ email, audienceId })`
+(add `RESEND_AUDIENCE_ID`) or a dedicated provider (MailerLite / Buttondown).
 
 ## 4. CMS
 
