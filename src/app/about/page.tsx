@@ -154,27 +154,43 @@ export default function AboutPage() {
               A team that treats exclusion as a solvable design problem.
             </p>
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {leadership.map((leader, i) => (
-              <Reveal
-                key={leader.name}
-                delay={i * 70}
-                className="rounded-card border border-border bg-paper p-7"
-              >
-                <span
-                  aria-hidden="true"
-                  className="flex size-14 items-center justify-center rounded-full bg-ink font-heading text-lg font-extrabold text-paper"
+          {leadership.length > 0 ? (
+            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {leadership.map((leader, i) => (
+                <Reveal
+                  key={leader.name}
+                  delay={i * 70}
+                  className="rounded-card border border-border bg-paper p-7"
                 >
-                  {leader.initials}
-                </span>
-                <h3 className="mt-5 text-lg font-extrabold">{leader.name}</h3>
-                <p className="text-sm font-semibold text-teal-text">{leader.role}</p>
-                <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                  {leader.bio}
-                </p>
-              </Reveal>
-            ))}
-          </div>
+                  <span
+                    aria-hidden="true"
+                    className="flex size-14 items-center justify-center rounded-full bg-ink font-heading text-lg font-extrabold text-paper"
+                  >
+                    {leader.initials}
+                  </span>
+                  <h3 className="mt-5 text-lg font-extrabold">{leader.name}</h3>
+                  <p className="text-sm font-semibold text-teal-text">{leader.role}</p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                    {leader.bio}
+                  </p>
+                </Reveal>
+              ))}
+            </div>
+          ) : (
+            <Reveal className="mt-10 rounded-card border border-border bg-paper p-8">
+              <p className="text-[15px] leading-relaxed text-muted">
+                Our leadership team will be introduced here shortly. In the meantime,
+                reach us at{" "}
+                <a
+                  href="mailto:hello@weenable.org"
+                  className="font-semibold text-teal-text underline-offset-4 hover:underline"
+                >
+                  hello@weenable.org
+                </a>
+                .
+              </p>
+            </Reveal>
+          )}
         </div>
       </Section>
 

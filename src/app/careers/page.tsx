@@ -41,31 +41,47 @@ export default function CareersPage() {
             Open roles
           </h2>
         </Reveal>
-        <div className="mt-12 space-y-5">
-          {jobs.map((job, i) => (
-            <Reveal
-              key={job.slug}
-              delay={i * 70}
-              className="flex flex-col gap-6 rounded-card border border-border bg-surface p-7 sm:flex-row sm:items-center sm:justify-between lg:p-8"
-            >
-              <div className="max-w-2xl">
-                <h3 className="text-xl font-extrabold">{job.title}</h3>
-                <p className="mt-2 text-sm font-semibold text-teal-text">
-                  {job.team} · {job.location} · {job.type}
-                </p>
-                <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                  {job.summary}
-                </p>
-              </div>
-              <Button asChild variant="secondary" size="md" className="shrink-0">
-                <Link href="/contact?topic=general">
-                  Apply
-                  <ArrowRight aria-hidden="true" className="size-4" />
-                </Link>
-              </Button>
-            </Reveal>
-          ))}
-        </div>
+        {jobs.length > 0 ? (
+          <div className="mt-12 space-y-5">
+            {jobs.map((job, i) => (
+              <Reveal
+                key={job.slug}
+                delay={i * 70}
+                className="flex flex-col gap-6 rounded-card border border-border bg-surface p-7 sm:flex-row sm:items-center sm:justify-between lg:p-8"
+              >
+                <div className="max-w-2xl">
+                  <h3 className="text-xl font-extrabold">{job.title}</h3>
+                  <p className="mt-2 text-sm font-semibold text-teal-text">
+                    {job.team} · {job.location} · {job.type}
+                  </p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                    {job.summary}
+                  </p>
+                </div>
+                <Button asChild variant="secondary" size="md" className="shrink-0">
+                  <Link href="/contact?topic=general">
+                    Apply
+                    <ArrowRight aria-hidden="true" className="size-4" />
+                  </Link>
+                </Button>
+              </Reveal>
+            ))}
+          </div>
+        ) : (
+          <Reveal className="mt-8 max-w-2xl rounded-card border border-border bg-surface p-8">
+            <p className="text-lg leading-relaxed text-muted">
+              We don&rsquo;t have open roles posted right now — but we&rsquo;re always
+              glad to meet people who treat exclusion as a solvable design problem.
+              Tell us what you&rsquo;re good at and where you&rsquo;d remove a barrier.
+            </p>
+            <Button asChild size="lg" className="mt-6">
+              <Link href="/contact?topic=general">
+                Introduce yourself
+                <ArrowRight aria-hidden="true" className="size-4" />
+              </Link>
+            </Button>
+          </Reveal>
+        )}
       </Section>
 
       {/* Benefits */}

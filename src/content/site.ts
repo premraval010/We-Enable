@@ -36,12 +36,13 @@ export const org = {
   },
 } as const;
 
-/** Sample org-internal metrics (see FICTIONAL-CONTENT.md — replace before launch). */
+/**
+ * Verified, non-fabricated org facts only. The eight programs are real; other
+ * headline metrics (people reached, countries, partners) will be added once
+ * confirmed and are intentionally omitted until then.
+ */
 export const orgMetrics = {
-  peopleReached: "48,000+",
-  countriesActive: "12",
   activePrograms: "8",
-  partnerOrganisations: "60+",
 } as const;
 
 /** Primary header navigation. Donate is rendered separately as a pill. */

@@ -21,7 +21,6 @@ const routes = [
   "/volunteer",
   "/careers",
   "/newsroom",
-  "/newsroom/why-we-rebuilt-creating-abilities-into-weenable",
   "/events",
   "/contact",
   "/accessibility",

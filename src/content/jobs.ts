@@ -8,47 +8,10 @@ export type Job = {
 };
 
 /**
- * SAMPLE open roles — realistic for a growing global non-profit.
- * See FICTIONAL-CONTENT.md; replace with the real ATS feed before launch.
+ * Open roles are published here as they open. Empty = no current openings
+ * (the /careers page shows an honest "no open roles right now" state).
  */
-export const jobs: Job[] = [
-  {
-    slug: "program-manager-disability-inclusion",
-    title: "Program Manager, Disability Inclusion",
-    team: "Programs",
-    location: "Singapore (hybrid)",
-    type: "Full-time",
-    summary:
-      "Lead delivery of our disability and independent-living programs in the Asia-Pacific region, working directly with agencies and partners.",
-  },
-  {
-    slug: "accessibility-engineer",
-    title: "Accessibility Engineer",
-    team: "Technology",
-    location: "Remote (global)",
-    type: "Full-time",
-    summary:
-      "Build and audit the AI accessibility platform to WCAG 2.2 AA and beyond. You treat exclusion as a solvable design problem.",
-  },
-  {
-    slug: "partnerships-lead",
-    title: "Partnerships Lead",
-    team: "Partnerships",
-    location: "Remote (global)",
-    type: "Full-time",
-    summary:
-      "Turn corporate, government, and foundation commitments into measurable, reportable programs. Evidence over thank-you letters.",
-  },
-  {
-    slug: "research-associate",
-    title: "Research Associate, Policy",
-    team: "Policy & Research",
-    location: "New York or remote",
-    type: "Full-time",
-    summary:
-      "Produce independent research and impact studies that governments can adopt with confidence. Honest methodology, published openly.",
-  },
-];
+export const jobs: Job[] = [];
 
 export const benefits = [
   {

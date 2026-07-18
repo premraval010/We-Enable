@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Download } from "lucide-react";
 import { PageHero } from "@/components/sections/PageHero";
 import { Section } from "@/components/sections/Section";
 import { StatBlock } from "@/components/sections/StatBlock";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { NewsletterBand } from "@/components/sections/NewsletterBand";
 import { Reveal } from "@/components/Reveal";
-import { Button } from "@/components/ui/button";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
@@ -18,13 +16,6 @@ export const metadata: Metadata = buildMetadata({
     "We publish what worked, what didn't, and what we're changing — the same standard we ask of our partners. Our reach, our results, and our full impact report.",
   path: "/impact",
 });
-
-const counters = [
-  { value: orgMetrics.peopleReached, label: "people reached" },
-  { value: orgMetrics.countriesActive, label: "countries active" },
-  { value: orgMetrics.activePrograms, label: "active programs" },
-  { value: orgMetrics.partnerOrganisations, label: "partner organisations" },
-];
 
 const quoteCards = [
   {
@@ -93,22 +84,17 @@ export default function ImpactPage() {
           <h2 id="sofar-heading" className="text-3xl font-extrabold sm:text-4xl">
             WeEnable, so far
           </h2>
-          <p className="mt-4 text-lg text-muted-dark">
-            Modest, growing, and reported as it really is.
+          <p className="mt-4 text-lg leading-relaxed text-muted-dark">
+            We run{" "}
+            <span className="font-semibold text-paper">
+              {orgMetrics.activePrograms} programs
+            </span>{" "}
+            across disability, aging, caregiving, employment, digital access,
+            policy, adaptive sport, and the arts. We would rather publish verified
+            numbers than round ones — so our headline reach, countries, and partner
+            figures will appear here as our first impact report is finalised.
           </p>
         </Reveal>
-        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {counters.map((c, i) => (
-            <Reveal key={c.label} delay={i * 80}>
-              <StatBlock
-                value={c.value}
-                body={c.label}
-                tone={i % 2 === 0 ? "coral" : "teal"}
-                onDark
-              />
-            </Reveal>
-          ))}
-        </div>
       </Section>
 
       {/* Stories, not statistics */}
@@ -140,25 +126,26 @@ export default function ImpactPage() {
         </div>
       </Section>
 
-      {/* Report download */}
+      {/* Report */}
       <Section tone="surface" aria-labelledby="reports-heading">
         <div id="reports" className="scroll-mt-24">
-          <Reveal className="flex flex-col items-start gap-6 rounded-card-lg border border-border bg-paper p-8 sm:flex-row sm:items-center sm:justify-between lg:p-12">
-            <div className="max-w-xl">
-              <h2 id="reports-heading" className="text-2xl font-extrabold sm:text-3xl">
-                2025 Impact Report
-              </h2>
-              <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                Full methodology, program-by-program results, and financials —
-                including what didn&rsquo;t work and what we&rsquo;re changing.
-              </p>
-            </div>
-            <Button asChild size="lg" className="shrink-0">
-              <a href="/reports/weenable-2025-impact-report.pdf" download>
-                <Download aria-hidden="true" className="size-5" />
-                Download the report
+          <Reveal className="rounded-card-lg border border-border bg-paper p-8 lg:p-12">
+            <h2 id="reports-heading" className="text-2xl font-extrabold sm:text-3xl">
+              Our first impact report
+            </h2>
+            <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">
+              We&rsquo;re preparing our first full impact report — methodology,
+              program-by-program results, and financials, including what
+              didn&rsquo;t work and what we&rsquo;re changing. It will be published
+              here. Want a copy the day it lands?{" "}
+              <a
+                href="mailto:hello@weenable.org?subject=Impact report"
+                className="font-semibold text-teal-text underline-offset-4 hover:underline"
+              >
+                Ask us to send it
               </a>
-            </Button>
+              .
+            </p>
           </Reveal>
         </div>
       </Section>

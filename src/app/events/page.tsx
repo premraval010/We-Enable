@@ -45,49 +45,60 @@ export default function EventsPage() {
       />
 
       <Section tone="paper" aria-label="Upcoming events">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {events.map((event, i) => (
-            <Reveal
-              key={event.slug}
-              delay={i * 80}
-              as="article"
-              className="flex flex-col overflow-hidden rounded-card border border-border bg-surface"
-            >
-              <div className="relative aspect-video overflow-hidden rounded-image">
-                <Image
-                  src={event.image.src}
-                  alt={event.image.alt}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 360px"
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col p-7">
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="rounded-full bg-ink px-3 py-1 text-xs font-bold uppercase tracking-[0.08em] text-paper">
-                    {event.type}
-                  </span>
-                  <time
-                    dateTime={event.startDate}
-                    className="text-sm font-semibold text-teal-text"
-                  >
-                    {event.dateLabel}
-                  </time>
+        {events.length > 0 ? (
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {events.map((event, i) => (
+              <Reveal
+                key={event.slug}
+                delay={i * 80}
+                as="article"
+                className="flex flex-col overflow-hidden rounded-card border border-border bg-surface"
+              >
+                <div className="relative aspect-video overflow-hidden rounded-image">
+                  <Image
+                    src={event.image.src}
+                    alt={event.image.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 360px"
+                    className="object-cover"
+                  />
                 </div>
-                <h2 className="mt-4 text-xl font-extrabold leading-snug">
-                  {event.title}
-                </h2>
-                <p className="mt-2 flex items-center gap-1.5 text-sm text-muted">
-                  <MapPin aria-hidden="true" className="size-4 shrink-0" />
-                  {event.city} · {event.venue}
-                </p>
-                <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                  {event.description}
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+                <div className="flex flex-1 flex-col p-7">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full bg-ink px-3 py-1 text-xs font-bold uppercase tracking-[0.08em] text-paper">
+                      {event.type}
+                    </span>
+                    <time
+                      dateTime={event.startDate}
+                      className="text-sm font-semibold text-teal-text"
+                    >
+                      {event.dateLabel}
+                    </time>
+                  </div>
+                  <h2 className="mt-4 text-xl font-extrabold leading-snug">
+                    {event.title}
+                  </h2>
+                  <p className="mt-2 flex items-center gap-1.5 text-sm text-muted">
+                    <MapPin aria-hidden="true" className="size-4 shrink-0" />
+                    {event.city} · {event.venue}
+                  </p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                    {event.description}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        ) : (
+          <Reveal className="max-w-2xl rounded-card border border-border bg-surface p-8">
+            <h2 className="text-2xl font-extrabold">No upcoming events just yet</h2>
+            <p className="mt-3 text-[15px] leading-relaxed text-muted">
+              We&rsquo;re planning our next roundtables, summits, and community days.
+              Join the newsletter below and we&rsquo;ll tell you the moment something
+              is happening near you.
+            </p>
+          </Reveal>
+        )}
       </Section>
 
       <NewsletterBand />

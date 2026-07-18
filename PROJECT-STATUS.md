@@ -13,8 +13,12 @@ deferred (see below).
   form (name, email, program, optional amount/message) + a direct-email option +
   "other ways to give". No payment processing. Online checkout is Phase 2.
 - **No login / signup / portals.** Removed to keep v1 simple. Phase 2.
-- **Images** — curated + verified from Unsplash (dignified, on-brand). Could optionally
-  be supplemented with authentic photos from creatingabilities.org later.
+- **Fabricated data removed for launch.** Leadership, headline metrics (people reached /
+  countries / partners), events, open roles, newsroom articles, press items, the impact-report
+  PDF, and the media-kit zip were all removed and replaced with honest empty states (routes
+  and nav stay intact). The 9 illustrative people-stories were kept by request and are flagged
+  in FICTIONAL-CONTENT.md as replace-with-real. See FICTIONAL-CONTENT.md for the full list.
+- **Images** — curated + verified from Unsplash (dignified, on-brand).
 
 ## Done ✅
 - **Foundation** — Next 16 + Tailwind v4 brand tokens, Manrope/Public Sans (self-hosted),
