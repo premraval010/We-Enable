@@ -7,7 +7,6 @@ import { Section, ChapterHeading } from "@/components/sections/Section";
 import { StatBlock } from "@/components/sections/StatBlock";
 import { ProgramRow } from "@/components/sections/ProgramRow";
 import { CtaTriplet } from "@/components/sections/CtaTriplet";
-import { PartnerStrip } from "@/components/sections/PartnerStrip";
 import { NewsletterBand } from "@/components/sections/NewsletterBand";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
@@ -277,21 +276,11 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Chapter 07, Who's With Us */}
-      <Section tone="paper" aria-label="Partners">
-        <Reveal className="mx-auto max-w-4xl">
-          <ChapterHeading chapter="07" label="Who's With Us" className="justify-center" />
-          <div className="mt-10">
-            <PartnerStrip />
-          </div>
-        </Reveal>
-      </Section>
-
-      {/* Chapter 08, Join */}
-      <Section tone="surface" aria-labelledby="ch08">
+      {/* Chapter 07, Join (partner strip hidden until real partners are confirmed) */}
+      <Section tone="surface" aria-labelledby="ch07">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <ChapterHeading chapter="08" label="Join" className="justify-center" />
-          <h2 id="ch08" className="mt-6 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+          <ChapterHeading chapter="07" label="Join" className="justify-center" />
+          <h2 id="ch07" className="mt-6 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
             There&rsquo;s a place for you in this
           </h2>
         </Reveal>
