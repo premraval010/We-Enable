@@ -1,15 +1,7 @@
 "use server";
 
 import { z } from "zod";
-
-export type FormState = {
-  ok: boolean;
-  message: string;
-  /** Field-level errors keyed by field name. */
-  errors?: Record<string, string>;
-};
-
-export const initialFormState: FormState = { ok: false, message: "" };
+import type { FormState } from "./form-state";
 
 /** Flatten a ZodError into a simple field→message map. */
 function fieldErrors(error: z.ZodError): Record<string, string> {

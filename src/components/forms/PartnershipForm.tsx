@@ -6,7 +6,8 @@ import { Input, Textarea } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Field, FormStatus } from "@/components/forms/Field";
-import { submitPartnership, initialFormState } from "@/lib/actions";
+import { submitPartnership } from "@/lib/actions";
+import { initialFormState } from "@/lib/form-state";
 
 const orgTypes = [
   "Corporation",

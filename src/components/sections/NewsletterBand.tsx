@@ -6,7 +6,8 @@ import { Container } from "@/components/ui/container";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { subscribeNewsletter, initialFormState } from "@/lib/actions";
+import { subscribeNewsletter } from "@/lib/actions";
+import { initialFormState } from "@/lib/form-state";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
