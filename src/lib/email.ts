@@ -28,6 +28,26 @@ export type MailInput = {
   replyTo?: string;
 };
 
+const escapeHtml = (s: string) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+/** Wrap the plain-text body in a simple, brand-tinted HTML email. */
+function toHtml(subject: string, text: string) {
+  const body = escapeHtml(text).replace(/\n/g, "<br>");
+  return `<!doctype html><html><body style="margin:0;background:#f7f3ee;font-family:Arial,Helvetica,sans-serif;color:#100d08">
+  <div style="max-width:560px;margin:0 auto;padding:32px 20px">
+    <div style="background:#fdfaf6;border:1px solid #dfdad4;border-radius:16px;padding:28px">
+      <p style="margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#b45a2b">WeEnable</p>
+      <h1 style="margin:0 0 16px;font-size:18px;color:#100d08">${escapeHtml(subject)}</h1>
+      <div style="font-size:15px;line-height:1.6;color:#3f3a33">${body}</div>
+    </div>
+    <p style="margin:16px 4px 0;font-size:12px;color:#8a8378">Sent from the weenable.org website.</p>
+  </div></body></html>`;
+}
+
 export async function sendNotification(
   input: MailInput,
 ): Promise<{ ok: boolean }> {
@@ -45,6 +65,7 @@ export async function sendNotification(
       replyTo: input.replyTo,
       subject: input.subject,
       text: input.text,
+      html: toHtml(input.subject, input.text),
     });
     if (error) {
       console.error("[email] Resend returned an error:", error);
