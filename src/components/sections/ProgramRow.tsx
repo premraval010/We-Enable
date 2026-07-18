@@ -71,6 +71,7 @@ export function ProgramRow({
         ) : null}
         <Link
           href={href}
+          aria-label={`Explore the ${label} program`}
           className={cn(
             "mt-6 inline-flex items-center gap-2 font-semibold transition-colors hover:gap-3",
             accentText,

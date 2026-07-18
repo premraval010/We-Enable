@@ -98,6 +98,14 @@ export function Footer() {
                 Accessibility
               </Link>
             </li>
+            <li>
+              <a
+                href={`mailto:${org.emails.accessibility}?subject=Accessibility issue`}
+                className="transition-colors hover:text-coral"
+              >
+                Report an accessibility issue
+              </a>
+            </li>
           </ul>
         </div>
       </div>

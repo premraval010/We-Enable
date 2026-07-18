@@ -21,11 +21,13 @@ export const metadata: Metadata = buildMetadata({
   path: "/",
 });
 
+// First four programs, so the row numbering reads 01–04 sequentially (no gap).
+// Digital & AI Accessibility is spotlighted separately in the Platform chapter.
 const homepagePrograms = [
   "people-with-disabilities",
   "adaptive-sports",
   "senior-citizens",
-  "digital-ai-accessibility",
+  "caregivers",
 ].map((slug) => getProgram(slug)!);
 
 const platformCards = [
