@@ -11,9 +11,9 @@ import { buildMetadata } from "@/lib/seo";
 import { resourceGroups } from "@/content/resources";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Resources — the research and tools we point to most",
+  title: "Resources, the research and tools we point to most",
   description:
-    "A curated library of the reports, standards, and services we send people to most often — from the WHO and UNESCO to government disability agencies.",
+    "A curated library of the reports, standards, and services we send people to most often, from the WHO and UNESCO to government disability agencies.",
   path: "/resources",
 });
 
@@ -29,7 +29,7 @@ export default function ResourcesPage() {
       <PageHero
         eyebrow="Resources"
         title="The research and tools we point people to most often."
-        intro="Trusted, established sources on disability, aging, employment, and access — the ones we reach for when someone needs a solid starting point."
+        intro="Trusted, established sources on disability, aging, employment, and access, the ones we reach for when someone needs a solid starting point."
       />
 
       <Section tone="paper" aria-label="Curated resources">
@@ -76,7 +76,7 @@ export default function ResourcesPage() {
 
       <CtaBand
         title="Can't find what you need?"
-        body="Tell us what you're looking for and we'll point you to the right source — or the right program."
+        body="Tell us what you're looking for and we'll point you to the right source, or the right program."
         links={[{ label: "Get in touch", href: "/contact" }]}
       />
       <NewsletterBand />

@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 import { org } from "@/content/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Accessibility — held to our own standard",
+  title: "Accessibility, held to our own standard",
   description:
     "We target WCAG 2.2 AA on every page, and AAA where content allows. What's built in, where we're still working, and how to tell us when we fall short.",
   path: "/accessibility",

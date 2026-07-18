@@ -12,9 +12,9 @@ import { buildMetadata } from "@/lib/seo";
 import { stories, featuredStory } from "@/content/stories";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Stories — the proof is in the people",
+  title: "Stories, the proof is in the people",
   description:
-    "Nine stories from inside WeEnable programs: employment, seniors, caregiving, adaptive sport, digital access, policy, and the arts — told the way they were lived.",
+    "Nine stories from inside WeEnable programs: employment, seniors, caregiving, adaptive sport, digital access, policy, and the arts, told the way they were lived.",
   path: "/stories",
 });
 
@@ -34,7 +34,7 @@ export default function StoriesPage() {
         title="The proof isn't in the numbers. It's in the people."
       />
 
-      {/* Featured — Ananya */}
+      {/* Featured, Yui */}
       <Section tone="paper" aria-labelledby={`story-${featuredStory.slug}`}>
         <article id={featuredStory.slug} className="scroll-mt-24">
           <Reveal className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
@@ -69,7 +69,7 @@ export default function StoriesPage() {
                     &ldquo;{featuredStory.quote}&rdquo;
                   </p>
                   <footer className="mt-3 text-sm font-semibold text-muted">
-                    {featuredStory.name} — {featuredStory.program}, {featuredStory.location}
+                    {featuredStory.name}, {featuredStory.program}, {featuredStory.location}
                   </footer>
                 </blockquote>
               ) : null}

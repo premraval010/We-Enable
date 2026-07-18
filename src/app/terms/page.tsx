@@ -10,7 +10,7 @@ import { org } from "@/content/site";
 export const metadata: Metadata = buildMetadata({
   title: "Terms of use",
   description:
-    "The terms that govern your use of the WeEnable website — donations, volunteering and accounts, intellectual property, and the usual disclaimers.",
+    "The terms that govern your use of the WeEnable website, donations, volunteering and accounts, intellectual property, and the usual disclaimers.",
   path: "/terms",
 });
 
@@ -85,7 +85,7 @@ export default function TermsPage() {
             </h2>
             <div className="mt-4 space-y-4 text-lg leading-relaxed text-muted">
               <p>
-                The content on this site — text, design, logos, and images — belongs
+                The content on this site, text, design, logos, and images, belongs
                 to WeEnable or its licensors, unless stated otherwise. You may share
                 and quote it with attribution. You may not reuse our branding or
                 present our work as your own without our written permission.

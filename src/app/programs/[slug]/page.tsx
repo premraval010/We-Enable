@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const program = getProgram(slug);
   if (!program) return {};
   return buildMetadata({
-    title: `${program.label} — ${program.tagline}`,
+    title: `${program.label}, ${program.tagline}`,
     description: program.summary.slice(0, 158),
     path: `/programs/${program.slug}`,
   });

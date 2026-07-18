@@ -17,7 +17,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   description:
-    "WeEnable is a global movement removing the barriers between ability and opportunity — across disability, aging, caregiving, employment, digital access, policy, sport, and the arts.",
+    "WeEnable is a global movement removing the barriers between ability and opportunity, across disability, aging, caregiving, employment, digital access, policy, sport, and the arts.",
   path: "/",
 });
 
@@ -53,7 +53,7 @@ export default function HomePage() {
     <>
       <HomeHero />
 
-      {/* Chapter 01 — The Barrier */}
+      {/* Chapter 01, The Barrier */}
       <Section tone="ink" aria-labelledby="ch01">
         <Reveal>
           <ChapterHeading chapter="01" label="The Barrier" onDark />
@@ -68,7 +68,7 @@ export default function HomePage() {
               tone="coral"
               onDark
               value="1.3B"
-              body="people live with a significant disability — roughly one in six of us, at some point in life."
+              body="people live with a significant disability, roughly one in six of us, at some point in life."
               source="World Health Organization"
             />
           </Reveal>
@@ -77,7 +77,7 @@ export default function HomePage() {
               tone="teal"
               onDark
               value="9/10"
-              body="children with disabilities in the developing world are still out of school — not for lack of ability, but of access."
+              body="children with disabilities in the developing world are still out of school, not for lack of ability, but of access."
               source="UNESCO"
             />
           </Reveal>
@@ -93,7 +93,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Chapter 02 — The Shift */}
+      {/* Chapter 02, The Shift */}
       <Section tone="paper" aria-labelledby="ch02">
         <Reveal className="mx-auto max-w-3xl text-center">
           <ChapterHeading chapter="02" label="The Shift" className="justify-center" />
@@ -105,7 +105,7 @@ export default function HomePage() {
             Dignity instead of dependency. Systems instead of sympathy. Access
             designed in from the first draft, not bolted on after the complaints
             start. That reframing is the whole difference between a charity and a
-            movement — and it&rsquo;s the only version of this work we&rsquo;re
+            movement, and it&rsquo;s the only version of this work we&rsquo;re
             interested in doing.
           </p>
         </Reveal>
@@ -146,7 +146,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Chapter 03 — Where It Started */}
+      {/* Chapter 03, Where It Started */}
       <Section tone="paper" aria-labelledby="ch03" className="pt-0 sm:pt-0 lg:pt-0">
         <Reveal className="overflow-hidden rounded-card-lg bg-ink text-paper">
           <div className="grid items-center gap-0 lg:grid-cols-2">
@@ -158,7 +158,7 @@ export default function HomePage() {
               <p className="mt-5 text-lg leading-relaxed text-muted-dark">
                 A handful of professionals refused to accept that a diagnosis
                 should decide a life&rsquo;s ceiling. Their first programme
-                wasn&rsquo;t treatment — it was adaptive sports, competition for
+                wasn&rsquo;t treatment. It was adaptive sports: competition for
                 people the world assumed couldn&rsquo;t compete. That one act
                 became Creating Abilities, now the founding programme inside
                 WeEnable.
@@ -184,7 +184,7 @@ export default function HomePage() {
         </Reveal>
       </Section>
 
-      {/* Chapter 04 — The Work */}
+      {/* Chapter 04, The Work */}
       <Section tone="surface" aria-labelledby="ch04">
         <Reveal className="max-w-3xl">
           <ChapterHeading chapter="04" label="The Work" />
@@ -215,14 +215,14 @@ export default function HomePage() {
         </Reveal>
       </Section>
 
-      {/* Chapter 05 — Proof */}
+      {/* Chapter 05, Proof */}
       <Section tone="paper" aria-labelledby="ch05">
         <Reveal className="overflow-hidden rounded-card-lg border border-border bg-surface">
           <div className="grid items-stretch gap-0 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <div className="relative min-h-72 lg:min-h-full">
               <Image
-                src="/images/story-ananya.jpg"
-                alt="Ananya working at a computer with an adaptive keyboard, focused on her screen."
+                src="/images/story-yui.jpg"
+                alt="Yui coding at a standing desk by a bright high-rise window, wearing headphones."
                 fill
                 sizes="(max-width: 1024px) 100vw, 460px"
                 className="object-cover"
@@ -237,7 +237,7 @@ export default function HomePage() {
                   understood the rest.&rdquo;
                 </p>
                 <footer className="mt-6 text-[15px] font-semibold text-muted">
-                  Ananya — Employment &amp; Livelihoods, Bengaluru
+                  Yui, Employment &amp; Livelihoods, Tokyo
                 </footer>
               </blockquote>
               <Link
@@ -252,7 +252,7 @@ export default function HomePage() {
         </Reveal>
       </Section>
 
-      {/* Chapter 06 — The Platform */}
+      {/* Chapter 06, The Platform */}
       <Section tone="ink" aria-labelledby="ch06">
         <Reveal className="max-w-3xl">
           <ChapterHeading chapter="06" label="The Platform" onDark />
@@ -277,7 +277,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Chapter 07 — Who's With Us */}
+      {/* Chapter 07, Who's With Us */}
       <Section tone="paper" aria-label="Partners">
         <Reveal className="mx-auto max-w-4xl">
           <ChapterHeading chapter="07" label="Who's With Us" className="justify-center" />
@@ -287,7 +287,7 @@ export default function HomePage() {
         </Reveal>
       </Section>
 
-      {/* Chapter 08 — Join */}
+      {/* Chapter 08, Join */}
       <Section tone="surface" aria-labelledby="ch08">
         <Reveal className="mx-auto max-w-3xl text-center">
           <ChapterHeading chapter="08" label="Join" className="justify-center" />

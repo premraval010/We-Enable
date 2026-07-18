@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/seo";
 import { org } from "@/content/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact — talk to a person, not a form",
+  title: "Contact, talk to a person, not a form",
   description:
     "Whichever door you knock on, someone on our team answers within two business days. Reach WeEnable by email, phone, or our contact form.",
   path: "/contact",

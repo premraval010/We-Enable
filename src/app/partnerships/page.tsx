@@ -9,7 +9,7 @@ import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Partnerships — inclusion works better with you in it",
+  title: "Partnerships, inclusion works better with you in it",
   description:
     "Corporations, governments, and foundations partner with WeEnable to turn commitments into measurable, reportable change. Corporate tiers, government tracks, and how we work.",
   path: "/partnerships",
@@ -19,7 +19,7 @@ const valueProps = [
   {
     icon: BadgeCheck,
     title: "A credible mandate",
-    body: "Inclusion backed by evidence and standards, not slogans — something your board and the public can trust.",
+    body: "Inclusion backed by evidence and standards, not slogans, something your board and the public can trust.",
   },
   {
     icon: Users,
@@ -64,7 +64,7 @@ const tiers = [
 const process = [
   { n: "01", title: "Discovery", body: "We learn your goals, constraints, and where inclusion can move the needle." },
   { n: "02", title: "Design", body: "We co-design a program with clear metrics and a delivery plan." },
-  { n: "03", title: "Launch", body: "We deliver — training, hiring, technology, or policy — on the ground." },
+  { n: "03", title: "Launch", body: "We deliver, training, hiring, technology, or policy, on the ground." },
   { n: "04", title: "Report", body: "You get evidence, not just a thank-you letter. Reported openly, on schedule." },
 ];
 
@@ -162,7 +162,7 @@ export default function PartnershipsPage() {
                 Infrastructure for public inclusion policy
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-muted">
-                Governments and foundations work with us to make inclusion durable —
+                Governments and foundations work with us to make inclusion durable, 
                 built into standards, procurement, and law rather than dependent on
                 the next budget cycle.
               </p>
@@ -182,7 +182,7 @@ export default function PartnershipsPage() {
             <Reveal delay={100} className="rounded-card-lg bg-ink p-8 text-paper lg:p-12">
               <h3 className="text-xl font-extrabold">Working with national agencies</h3>
               <p className="mt-4 text-[15px] leading-relaxed text-muted-dark">
-                We support public agencies on aging and disability inclusion — two of
+                We support public agencies on aging and disability inclusion, two of
                 the fastest-growing priorities for governments worldwide. That means
                 independent research a ministry can cite, accessibility standards that
                 can be audited, program delivery with clear metrics, and evaluation

@@ -9,9 +9,9 @@ import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Volunteer — give your time and skill, not just your sympathy",
+  title: "Volunteer, give your time and skill, not just your sympathy",
   description:
-    "We match what you're good at to where it's needed most — in hours, not months. Skills-based projects, mentorship, events, and remote micro-tasks.",
+    "We match what you're good at to where it's needed most, in hours, not months. Skills-based projects, mentorship, events, and remote micro-tasks.",
   path: "/volunteer",
 });
 
@@ -19,7 +19,7 @@ const paths = [
   {
     icon: Wrench,
     title: "Skills-based projects",
-    body: "Put professional expertise to work — engineering, design, research, comms — on a defined project with a real outcome.",
+    body: "Put professional expertise to work, engineering, design, research, comms, on a defined project with a real outcome.",
   },
   {
     icon: GraduationCap,
@@ -29,12 +29,12 @@ const paths = [
   {
     icon: CalendarDays,
     title: "Events & campaigns",
-    body: "Show up in person for community days, summits, and drives — the moments where the movement meets people.",
+    body: "Show up in person for community days, summits, and drives, the moments where the movement meets people.",
   },
   {
     icon: Laptop,
     title: "Remote micro-tasks",
-    body: "Test accessibility, translate, transcribe, or review — small, remote tasks that add up across thousands of hands.",
+    body: "Test accessibility, translate, transcribe, or review, small, remote tasks that add up across thousands of hands.",
   },
 ];
 
@@ -42,7 +42,7 @@ const steps = [
   {
     n: "01",
     title: "Tell us your skills",
-    body: "A five-minute profile. No résumé required — just what you're good at and when you're free.",
+    body: "A five-minute profile. No résumé required, just what you're good at and when you're free.",
   },
   {
     n: "02",
@@ -52,7 +52,7 @@ const steps = [
   {
     n: "03",
     title: "Start contributing",
-    body: "You begin on real work quickly — hours, not months — with support the whole way.",
+    body: "You begin on real work quickly, hours, not months, with support the whole way.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function VolunteerPage() {
       <PageHero
         eyebrow="Volunteer"
         title="Give your time and skill, not just your sympathy"
-        intro="We match what you're good at to where it's needed most — in hours, not months."
+        intro="We match what you're good at to where it's needed most, in hours, not months."
       />
 
       {/* Paths */}

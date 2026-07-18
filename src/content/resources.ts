@@ -23,7 +23,7 @@ export const resourceGroups: ResourceGroup[] = [
           "WHO's landmark report on the 1.3 billion people living with significant disability and the systemic barriers they face.",
       },
       {
-        title: "Disability and health — fact sheet",
+        title: "Disability and health, fact sheet",
         org: "World Health Organization",
         href: "https://www.who.int/news-room/fact-sheets/detail/disability-and-health",
         description:
@@ -56,7 +56,7 @@ export const resourceGroups: ResourceGroup[] = [
           "Global governing body for the Paralympic movement, para-sport classification, and athlete pathways.",
       },
       {
-        title: "Physical activity — fact sheet",
+        title: "Physical activity, fact sheet",
         org: "World Health Organization",
         href: "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
         description:
@@ -87,21 +87,21 @@ export const resourceGroups: ResourceGroup[] = [
     title: "Healthcare",
     resources: [
       {
-        title: "Ageing and health — fact sheet",
+        title: "Ageing and health, fact sheet",
         org: "World Health Organization",
         href: "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health",
         description:
           "Global data on population aging, including the shift to one in six people aged 60+ by 2030.",
       },
       {
-        title: "Assistive technology — fact sheet",
+        title: "Assistive technology, fact sheet",
         org: "World Health Organization",
         href: "https://www.who.int/news-room/fact-sheets/detail/assistive-technology",
         description:
-          "The global need for assistive technology and the access gap — including wheelchairs.",
+          "The global need for assistive technology and the access gap, including wheelchairs.",
       },
       {
-        title: "Blindness and vision impairment — fact sheet",
+        title: "Blindness and vision impairment, fact sheet",
         org: "World Health Organization",
         href: "https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment",
         description:
@@ -136,7 +136,7 @@ export const resourceGroups: ResourceGroup[] = [
         org: "W3C Web Accessibility Initiative",
         href: "https://www.w3.org/WAI/standards-guidelines/wcag/",
         description:
-          "The testable global standard for digital accessibility — the reference we build and audit against.",
+          "The testable global standard for digital accessibility, the reference we build and audit against.",
       },
       {
         title: "Introduction to Web Accessibility",

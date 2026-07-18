@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/seo";
 import { leadership } from "@/content/leadership";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About — from Creating Abilities to a global movement",
+  title: "About, from Creating Abilities to a global movement",
   description:
     "We started helping individuals adapt to a world with barriers. We're becoming an organisation that redesigns the world so the barriers stop existing. Our story, mission, and leadership.",
   path: "/about",
@@ -70,15 +70,15 @@ export default function AboutPage() {
               </p>
               <p>
                 Their first refusal was linguistic. They threw out the language of
-                welfare — the vocabulary of helping, sheltering, and doing-for — and
+                welfare, the vocabulary of helping, sheltering, and doing-for, and
                 replaced it with the language of productivity: skills, employment,
                 independence, participation. Words change what you build. These
                 words pointed at a life, not a condition.
               </p>
               <p>
                 Their first programme was a playing field, not a clinic. Adaptive
-                sport — real competition for people the world assumed couldn&rsquo;t
-                compete — proved the whole thesis in public. Give someone the right
+                sport, real competition for people the world assumed couldn&rsquo;t
+                compete, proved the whole thesis in public. Give someone the right
                 equipment and a fair contest, and the only question left is how
                 well they play. That work became Creating Abilities.
               </p>
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 In time, the mission outgrew a single name. Helping individuals adapt
                 to a broken world was never going to be enough; the world itself had
                 to be redesigned. So Creating Abilities became the founding programme
-                inside something larger — WeEnable — a movement built to remove the
+                inside something larger, WeEnable, a movement built to remove the
                 barriers between ability and opportunity, everywhere, at scale.
               </p>
             </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
               Vision
             </p>
             <p className="mt-5 font-heading text-2xl font-extrabold leading-snug sm:text-3xl">
-              A world designed for everyone from the start — where inclusion is
+              A world designed for everyone from the start, where inclusion is
               the default, not the exception.
             </p>
           </Reveal>

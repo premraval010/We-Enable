@@ -27,7 +27,7 @@ export function Reveal({
     const node = ref.current;
     if (!node) return;
     // Under prefers-reduced-motion the CSS forces .reveal fully visible, so we
-    // don't need to set state here — only observe for the animated path.
+    // don't need to set state here, only observe for the animated path.
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {

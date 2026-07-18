@@ -12,7 +12,7 @@ import { otherWaysToGive } from "@/content/donate";
 import { org } from "@/content/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Donate — give with confidence",
+  title: "Donate, give with confidence",
   description:
     "Every contribution is tracked to the exact program it funds. No middlemen, no vague promises. Arrange a gift by form or email while online giving is finalised.",
   path: "/donate",
@@ -68,7 +68,7 @@ export default function DonatePage() {
               <ShieldCheck aria-hidden="true" className="size-6 text-coral-text" />
               <h2 className="mt-3 text-lg font-extrabold">Where your money goes</h2>
               <p className="mt-2 text-[15px] leading-relaxed text-muted">
-                You choose the program. We track your gift to it and report back — the
+                You choose the program. We track your gift to it and report back, the
                 same transparency standard we ask of our partners.
               </p>
               <Link

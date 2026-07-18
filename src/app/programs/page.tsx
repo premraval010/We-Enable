@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 import { programs } from "@/content/programs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Programs — eight programs, one mission",
+  title: "Programs, eight programs, one mission",
   description:
     "Eight WeEnable programs, each removing one specific barrier: disability, adaptive sport, seniors, caregivers, employment, digital and AI access, policy, and the arts.",
   path: "/programs",
@@ -37,7 +37,7 @@ export default function ProgramsPage() {
       <PageHero
         eyebrow="What we do"
         title="Eight programs. One mission."
-        intro="Every program below exists to remove one specific barrier — and to prove a model that governments, companies, and communities can adopt at scale."
+        intro="Every program below exists to remove one specific barrier, and to prove a model that governments, companies, and communities can adopt at scale."
       />
 
       <Section tone="paper" aria-label="All programs">

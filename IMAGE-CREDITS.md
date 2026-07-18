@@ -22,7 +22,7 @@ runtime.
 | program-digital.jpg | Hands on a braille display beside a keyboard (assistive tech) | Compagnons | https://unsplash.com/photos/4MoIpDcSlr4 |
 | program-policy.jpg | Meeting in session, people in discussion with documents | Dylan Gillis | https://unsplash.com/photos/KdeqA3aTnBY |
 | program-arts.jpg | Young artist at work in a paint studio | Bárbara Fróes | https://unsplash.com/photos/Yhsdub0hV1A |
-| story-ananya.jpg | Person working focused at a computer by a bright window | Christina @ wocintechchat.com | https://unsplash.com/photos/7PHq2BCa7dM |
+| story-yui.jpg | Person coding at a standing desk by a bright high-rise window | Christina @ wocintechchat.com | https://unsplash.com/photos/7PHq2BCa7dM |
 | story-grace.jpg | Older adult smiling at a smartphone | Georg Arthur Pflueger | https://unsplash.com/photos/TeWwYARfcM4 |
 | story-marisa.jpg | Quiet restful spot by a sunlit window (environmental) | Elliot Gouy | https://unsplash.com/photos/A6kHt44ntmo |
 | story-diego.jpg | Athletes in sport wheelchairs driving forward | Aldward Castillo | https://unsplash.com/photos/6egh6PXYn-c |
@@ -30,7 +30,7 @@ runtime.
 | story-jakarta.jpg | Yellow tactile paving on a city footpath (detail) | Asep Rendi | https://unsplash.com/photos/UboqDdNyL00 |
 | story-toronto.jpg | Workers collaborating in a modern logistics facility | Remy Gieling | https://unsplash.com/photos/qqtE2yX7POI |
 | story-ravi.jpg | People reviewing and signing paperwork together | Romain Dancre | https://unsplash.com/photos/doplSDELX7E |
-| story-priya.jpg | Diverse students engaged in a lesson | Sam Balye | https://unsplash.com/photos/w1FwDvIreZU |
+| story-priya.jpg | Schoolgirl in uniform standing among classmates in a bright Indian classroom | Raj Rana | https://unsplash.com/photos/nWpTGnP_jWE |
 | event-roundtable.jpg | Roundtable discussion in a bright conference room | Christina @ wocintechchat.com | https://unsplash.com/photos/faEfWCdOKIg |
 | event-summit.jpg | People networking at a professional summit | Product School | https://unsplash.com/photos/nOvIa_x_tfo |
 | event-community.jpg | People gathered around a tablet at a community event | Rendy Novantino | https://unsplash.com/photos/Yr3SEj6wln0 |

@@ -10,7 +10,7 @@ import { org } from "@/content/site";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy policy",
   description:
-    "How WeEnable collects, uses, and protects your personal data — what we gather, how we use it, who we share it with, and the rights you have.",
+    "How WeEnable collects, uses, and protects your personal data, what we gather, how we use it, who we share it with, and the rights you have.",
   path: "/privacy",
 });
 
@@ -42,7 +42,7 @@ export default function PrivacyPage() {
             </h2>
             <div className="mt-4 space-y-4 text-lg leading-relaxed text-muted">
               <p>
-                We collect the information you give us directly — your name and
+                We collect the information you give us directly, your name and
                 email when you subscribe, donate, volunteer, or contact us, and
                 any details you include in a message. When you make a donation,
                 our payment processor handles your card details; we never see or
@@ -78,8 +78,8 @@ export default function PrivacyPage() {
             <div className="mt-4 space-y-4 text-lg leading-relaxed text-muted">
               <p>
                 We do not sell your data, and we never will. We share it only with
-                the service providers who help us operate — payment processors,
-                email delivery, and hosting — and only to the extent they need it
+                the service providers who help us operate, payment processors,
+                email delivery, and hosting, and only to the extent they need it
                 to do that job. We may disclose information where the law requires
                 it. That is the whole list.
               </p>

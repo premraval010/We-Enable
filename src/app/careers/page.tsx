@@ -13,7 +13,7 @@ import { buildMetadata } from "@/lib/seo";
 import { jobs, benefits } from "@/content/jobs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Careers — build the systems that build access",
+  title: "Careers, build the systems that build access",
   description:
     "We hire people who treat exclusion as a solvable design problem, not a fact of life. See open roles across programs, technology, partnerships, and research.",
   path: "/careers",
@@ -31,7 +31,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Build the systems that build access"
-        intro="We hire people who treat exclusion as a solvable design problem — not a fact of life."
+        intro="We hire people who treat exclusion as a solvable design problem, not a fact of life."
       />
 
       {/* Open roles */}
@@ -70,7 +70,7 @@ export default function CareersPage() {
         ) : (
           <Reveal className="mt-8 max-w-2xl rounded-card border border-border bg-surface p-8">
             <p className="text-lg leading-relaxed text-muted">
-              We don&rsquo;t have open roles posted right now — but we&rsquo;re always
+              We don&rsquo;t have open roles posted right now, but we&rsquo;re always
               glad to meet people who treat exclusion as a solvable design problem.
               Tell us what you&rsquo;re good at and where you&rsquo;d remove a barrier.
             </p>
@@ -91,7 +91,7 @@ export default function CareersPage() {
             How we work
           </h2>
           <p className="mt-4 text-lg text-muted">
-            The workplace is designed for access from the first draft — the same
+            The workplace is designed for access from the first draft, the same
             standard we ask of everyone else.
           </p>
         </Reveal>

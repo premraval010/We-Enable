@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/seo";
 import { events } from "@/content/events";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Events — where the movement shows up in person",
+  title: "Events, where the movement shows up in person",
   description:
     "Fellowships, roundtables, hackathons, and community days across every place we work. See what's coming up and where.",
   path: "/events",
@@ -41,7 +41,7 @@ export default function EventsPage() {
       <PageHero
         eyebrow="Events"
         title="Where the movement shows up in person"
-        intro="Fellowships, roundtables, hackathons, and community days — across every place we work."
+        intro="Fellowships, roundtables, hackathons, and community days, across every place we work."
       />
 
       <Section tone="paper" aria-label="Upcoming events">

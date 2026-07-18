@@ -4,7 +4,7 @@ import { ArrowDown } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 
-/** Chapter 00 — full-viewport cinematic hero with gradient into Ink. */
+/** Chapter 00, full-viewport cinematic hero with gradient into Ink. */
 export function HomeHero() {
   return (
     <section className="on-ink relative flex min-h-[92vh] items-end overflow-hidden bg-ink text-paper">
@@ -31,7 +31,7 @@ export function HomeHero() {
           className="animate-fade-up text-sm font-bold uppercase tracking-[0.14em] text-coral"
           style={{ animationDelay: "0.05s" }}
         >
-          WeEnable — Formerly Creating Abilities
+          WeEnable, Formerly Creating Abilities
         </p>
         <h1
           className="animate-fade-up mt-5 max-w-4xl font-heading font-extrabold leading-[1.02] tracking-tight text-paper"
@@ -43,7 +43,7 @@ export function HomeHero() {
           className="animate-fade-up mt-6 max-w-2xl text-lg leading-relaxed text-muted-dark sm:text-xl"
           style={{ animationDelay: "0.3s" }}
         >
-          The world was. We&rsquo;re rebuilding it — one system, one policy, one
+          The world was. We&rsquo;re rebuilding it, one system, one policy, one
           line of code at a time.
         </p>
         <div

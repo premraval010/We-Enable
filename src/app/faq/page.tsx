@@ -16,9 +16,9 @@ import { buildMetadata } from "@/lib/seo";
 import { faqGroups, allFaqs } from "@/content/faq";
 
 export const metadata: Metadata = buildMetadata({
-  title: "FAQ — questions, answered",
+  title: "FAQ, questions, answered",
   description:
-    "Straight answers for donors, volunteers, and partners — where your money goes, how matching works, and what changed when Creating Abilities became WeEnable.",
+    "Straight answers for donors, volunteers, and partners, where your money goes, how matching works, and what changed when Creating Abilities became WeEnable.",
   path: "/faq",
 });
 

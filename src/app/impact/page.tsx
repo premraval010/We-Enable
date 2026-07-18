@@ -11,9 +11,9 @@ import { buildMetadata } from "@/lib/seo";
 import { orgMetrics } from "@/content/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Impact — measured honestly, reported openly",
+  title: "Impact, measured honestly, reported openly",
   description:
-    "We publish what worked, what didn't, and what we're changing — the same standard we ask of our partners. Our reach, our results, and our full impact report.",
+    "We publish what worked, what didn't, and what we're changing, the same standard we ask of our partners. Our reach, our results, and our full impact report.",
   path: "/impact",
 });
 
@@ -21,8 +21,8 @@ const quoteCards = [
   {
     quote:
       "I never needed anyone to feel sorry for me. I needed a keyboard that understood how I type, and a manager who understood the rest.",
-    name: "Ananya",
-    place: "Employment & Livelihoods · Bengaluru",
+    name: "Yui",
+    place: "Employment & Livelihoods · Tokyo",
   },
   {
     quote: "My grandmother video-calls me every Sunday now. That's the whole program, working.",
@@ -48,7 +48,7 @@ export default function ImpactPage() {
       <PageHero
         eyebrow="Impact"
         title="Measured honestly, reported openly"
-        intro="We publish what worked, what didn't, and what we're changing — the same standard we ask of our partners."
+        intro="We publish what worked, what didn't, and what we're changing, the same standard we ask of our partners."
       />
 
       {/* Global context */}
@@ -62,7 +62,7 @@ export default function ImpactPage() {
           <Reveal>
             <StatBlock
               value="1.3B"
-              body="people live with a significant disability — roughly one in six of us."
+              body="people live with a significant disability, roughly one in six of us."
               source="World Health Organization"
               tone="coral"
             />
@@ -91,7 +91,7 @@ export default function ImpactPage() {
             </span>{" "}
             across disability, aging, caregiving, employment, digital access,
             policy, adaptive sport, and the arts. We would rather publish verified
-            numbers than round ones — so our headline reach, countries, and partner
+            numbers than round ones, so our headline reach, countries, and partner
             figures will appear here as our first impact report is finalised.
           </p>
         </Reveal>
@@ -134,7 +134,7 @@ export default function ImpactPage() {
               Our first impact report
             </h2>
             <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">
-              We&rsquo;re preparing our first full impact report — methodology,
+              We&rsquo;re preparing our first full impact report, methodology,
               program-by-program results, and financials, including what
               didn&rsquo;t work and what we&rsquo;re changing. It will be published
               here. Want a copy the day it lands?{" "}

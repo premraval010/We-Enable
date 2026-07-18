@@ -11,7 +11,7 @@ type LogoProps = {
 };
 
 /**
- * "The Doorway" mark + wordmark. Exact SVG geometry — never redraw.
+ * "The Doorway" mark + wordmark. Exact SVG geometry, never redraw.
  * The mark is always coral; "We" follows variant, "Enable" is always coral.
  */
 export function Logo({
@@ -72,7 +72,7 @@ export function Logo({
   return (
     <Link
       href={href}
-      aria-label="WeEnable — home"
+      aria-label="WeEnable, home"
       className="inline-flex items-center rounded-md focus-visible:outline-2"
     >
       {content}

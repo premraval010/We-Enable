@@ -40,7 +40,7 @@ for (const route of routes) {
       // WCAG 2.2 SC 1.4.3 exempts logotypes/brand names from contrast rules.
       // The "Enable" wordmark is coral by brand mandate (exact token, no drift),
       // so the brand mark is excluded from the automated contrast scan.
-      .exclude('a[aria-label="WeEnable — home"]')
+      .exclude('a[aria-label="WeEnable, home"]')
       .analyze();
     expect(results.violations, JSON.stringify(results.violations, null, 2)).toEqual(
       [],

@@ -9,10 +9,10 @@ import { Resend } from "resend";
  * - Key set → sends via Resend and reports whether it actually went out.
  *
  * Env:
- * - RESEND_API_KEY   — the Resend API key (never commit it).
- * - RESEND_FROM      — verified sender, e.g. "WeEnable <noreply@weenable.org>".
+ * - RESEND_API_KEY, the Resend API key (never commit it).
+ * - RESEND_FROM, verified sender, e.g. "WeEnable <noreply@weenable.org>".
  *                      Defaults to Resend's onboarding sender for first-run tests.
- * - NOTIFICATIONS_TO — optional override that routes ALL notifications to one
+ * - NOTIFICATIONS_TO, optional override that routes ALL notifications to one
  *                      address (useful before weenable.org is verified in Resend,
  *                      when you can only send to your own account email).
  */
@@ -54,7 +54,7 @@ export async function sendNotification(
   const to = process.env.NOTIFICATIONS_TO || input.to;
 
   if (!resend) {
-    console.info("[email] RESEND_API_KEY not set — would send:", { ...input, to });
+    console.info("[email] RESEND_API_KEY not set, would send:", { ...input, to });
     return { ok: true };
   }
 

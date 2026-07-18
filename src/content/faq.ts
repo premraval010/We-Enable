@@ -8,7 +8,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Where does my money actually go?",
         answer:
-          "Every contribution is tracked to the specific program it funds — disability, seniors, caregivers, employment, and the rest. When you give, you choose a program designation, and our real-time impact reporting shows where support goes and what it changes. No middlemen, no vague promises.",
+          "Every contribution is tracked to the specific program it funds, disability, seniors, caregivers, employment, and the rest. When you give, you choose a program designation, and our real-time impact reporting shows where support goes and what it changes. No middlemen, no vague promises.",
       },
       {
         question: "Is my donation tax-deductible?",
@@ -18,12 +18,12 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Can I cancel or change a monthly gift?",
         answer:
-          "Yes, at any time, with no friction. Monthly giving is designed to be fully under your control — you can pause, change the amount, or cancel from your donor portal or by emailing us. We never make you call to leave.",
+          "Yes, at any time, with no friction. Monthly giving is designed to be fully under your control, you can pause, change the amount, or cancel from your donor portal or by emailing us. We never make you call to leave.",
       },
       {
         question: "Will I see the impact of my giving?",
         answer:
-          "Yes. Donors receive program-level impact reporting, and our annual Impact Report publishes program-by-program results and financials — including what did not work. We hold ourselves to the same transparency standard we ask of our partners.",
+          "Yes. Donors receive program-level impact reporting, and our annual Impact Report publishes program-by-program results and financials, including what did not work. We hold ourselves to the same transparency standard we ask of our partners.",
       },
       {
         question: "What is the difference between one-time and monthly giving?",
@@ -43,12 +43,12 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Can I volunteer remotely?",
         answer:
-          "Yes. A large share of our volunteering is fully remote — accessibility testing, mentorship, translation, design, and micro-tasks. Where you are does not limit how you can help.",
+          "Yes. A large share of our volunteering is fully remote, accessibility testing, mentorship, translation, design, and micro-tasks. Where you are does not limit how you can help.",
       },
       {
         question: "How does the matching process work?",
         answer:
-          "You complete a short profile — about five minutes, no résumé required — telling us what you are good at and when you are free. Our matching connects your skills and time to the roles and communities that need them most, and you start contributing. No long onboarding.",
+          "You complete a short profile, about five minutes, no résumé required, telling us what you are good at and when you are free. Our matching connects your skills and time to the roles and communities that need them most, and you start contributing. No long onboarding.",
       },
       {
         question: "Do I need a background in disability or aging work?",
@@ -63,12 +63,12 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "What changed when Creating Abilities became WeEnable?",
         answer:
-          "The mission grew. Creating Abilities helped individuals adapt to a world with barriers. WeEnable redesigns the world so the barriers stop existing. Every program now aims to prove a model that governments, companies, and communities can adopt at scale. Creating Abilities — the founding adaptive-sports work — continues as the founding program inside WeEnable.",
+          "The mission grew. Creating Abilities helped individuals adapt to a world with barriers. WeEnable redesigns the world so the barriers stop existing. Every program now aims to prove a model that governments, companies, and communities can adopt at scale. Creating Abilities, the founding adaptive-sports work, continues as the founding program inside WeEnable.",
       },
       {
         question: "How do government partnerships work?",
         answer:
-          "We work with national and public-sector agencies on aging and disability inclusion — through independent research, program design and delivery, accessibility standards and certification, and independent monitoring and evaluation. The output is evidence, not just a thank-you letter. Governments can start a conversation at partners@weenable.org.",
+          "We work with national and public-sector agencies on aging and disability inclusion, through independent research, program design and delivery, accessibility standards and certification, and independent monitoring and evaluation. The output is evidence, not just a thank-you letter. Governments can start a conversation at partners@weenable.org.",
       },
       {
         question: "What do corporate partners actually get?",
@@ -83,7 +83,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: "Is the WeEnable website accessible?",
         answer:
-          "That is the point. We target WCAG 2.2 AA across every page, with AAA where content allows — keyboard operability, screen-reader structure, sufficient contrast, resizable text, and reduced-motion support. If you hit a barrier, tell us at accessibility@weenable.org and we will fix it.",
+          "That is the point. We target WCAG 2.2 AA across every page, with AAA where content allows, keyboard operability, screen-reader structure, sufficient contrast, resizable text, and reduced-motion support. If you hit a barrier, tell us at accessibility@weenable.org and we will fix it.",
       },
       {
         question: "How can I get help from a WeEnable program?",

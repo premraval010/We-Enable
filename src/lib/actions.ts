@@ -19,7 +19,7 @@ function fieldErrors(error: z.ZodError): Record<string, string> {
 function deliveryFailed(inbox: string): FormState {
   return {
     ok: false,
-    message: `Sorry — we couldn't send that just now. Please email us directly at ${inbox}.`,
+    message: `Sorry, we couldn't send that just now. Please email us directly at ${inbox}.`,
   };
 }
 
@@ -89,7 +89,7 @@ export async function submitGivingEnquiry(
   const { ok } = await sendNotification({
     to: org.emails.general,
     replyTo: from,
-    subject: `New giving enquiry — ${program}`,
+    subject: `New giving enquiry, ${program}`,
     text: [
       `Name: ${name}`,
       `Email: ${from}`,
@@ -228,7 +228,7 @@ export async function submitPartnership(
   const { ok } = await sendNotification({
     to: org.emails.partners,
     replyTo: from,
-    subject: `New partnership enquiry — ${organisation}`,
+    subject: `New partnership enquiry, ${organisation}`,
     text: `Organisation: ${organisation}\nType: ${orgType}\nEmail: ${from}\n\n${message}`,
   });
   if (!ok) return deliveryFailed(org.emails.partners);

@@ -11,7 +11,7 @@ export const SITE_URL = (
 export const SITE_NAME = "WeEnable";
 export const SITE_TAGLINE = "Ability was never the barrier.";
 export const SITE_DESCRIPTION =
-  "WeEnable is a global movement removing the barriers between ability and opportunity — across disability, aging, caregiving, employment, digital access, policy, sport, and the arts.";
+  "WeEnable is a global movement removing the barriers between ability and opportunity, across disability, aging, caregiving, employment, digital access, policy, sport, and the arts.";
 
 type BuildMetadataInput = {
   /** Page title without the site suffix. Omit on the homepage. */

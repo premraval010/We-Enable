@@ -15,7 +15,7 @@ function svgProps(title?: string) {
 const coral = "var(--color-coral)";
 const teal = "var(--color-teal)";
 
-/** Concentric doorways — the ripple: one door opening many. */
+/** Concentric doorways, the ripple: one door opening many. */
 export function DoorwayRipple({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="0 0 120 120" fill="none" {...svgProps(title)} {...props}>
@@ -38,7 +38,7 @@ export function DoorwayRipple({ title, ...props }: IlloProps) {
   );
 }
 
-/** Ascending arcs — momentum, progress. */
+/** Ascending arcs, momentum, progress. */
 export function AscentArcs({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="0 0 120 120" fill="none" {...svgProps(title)} {...props}>
@@ -49,7 +49,7 @@ export function AscentArcs({ title, ...props }: IlloProps) {
   );
 }
 
-/** AI Accessibility — a document with sound waves. */
+/** AI Accessibility, a document with sound waves. */
 export function IconReader({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="0 0 48 48" fill="none" {...svgProps(title)} {...props}>
@@ -62,7 +62,7 @@ export function IconReader({ title, ...props }: IlloProps) {
   );
 }
 
-/** Matching — two nodes connecting. */
+/** Matching, two nodes connecting. */
 export function IconMatching({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="0 0 48 48" fill="none" {...svgProps(title)} {...props}>
@@ -73,7 +73,7 @@ export function IconMatching({ title, ...props }: IlloProps) {
   );
 }
 
-/** Reporting — a bar chart glyph. */
+/** Reporting, a bar chart glyph. */
 export function IconReporting({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="0 0 48 48" fill="none" {...svgProps(title)} {...props}>
@@ -85,7 +85,7 @@ export function IconReporting({ title, ...props }: IlloProps) {
   );
 }
 
-/** Large doorway — hero/empty-state motif. */
+/** Large doorway, hero/empty-state motif. */
 export function DoorwayGlyph({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="-6 -12 62 68" fill="none" {...svgProps(title)} {...props}>
@@ -96,7 +96,7 @@ export function DoorwayGlyph({ title, ...props }: IlloProps) {
   );
 }
 
-/** 404 — a doorway ajar, teal path leading out. */
+/** 404, a doorway ajar, teal path leading out. */
 export function NotFoundIllo({ title, ...props }: IlloProps) {
   return (
     <svg viewBox="0 0 200 160" fill="none" {...svgProps(title)} {...props}>

@@ -13,9 +13,9 @@ import { featuredArticle, gridArticles, pressItems } from "@/content/news";
 import { org } from "@/content/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Newsroom — stories, research, and news",
+  title: "Newsroom, stories, research, and news",
   description:
-    "Stories, research, and news from the movement. Our newsroom is launching soon — for press enquiries, reach the WeEnable team directly.",
+    "Stories, research, and news from the movement. Our newsroom is launching soon, for press enquiries, reach the WeEnable team directly.",
   path: "/newsroom",
 });
 
@@ -33,7 +33,7 @@ export default function NewsroomPage() {
       <PageHero
         eyebrow="Newsroom"
         title="Stories, research, and news from the movement"
-        intro="What we're learning, what we're publishing, and what's changing — reported the way we report everything else."
+        intro="What we're learning, what we're publishing, and what's changing, reported the way we report everything else."
       />
 
       {/* Articles (empty state until published) */}

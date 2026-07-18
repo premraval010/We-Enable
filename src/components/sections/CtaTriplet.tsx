@@ -24,7 +24,7 @@ const cards = [
   {
     icon: Handshake,
     title: "Partner",
-    body: "Corporate ESG, government, or foundation — build inclusion into your mission.",
+    body: "Corporate ESG, government, or foundation, build inclusion into your mission.",
     cta: "Start a partnership",
     href: "/partnerships",
     primary: false,
@@ -42,7 +42,7 @@ export function CtaTriplet() {
             delay={i * 90}
             className={cn(
               "group flex flex-col rounded-card border p-8 transition-transform duration-300 hover:-translate-y-1.5",
-              // Donate is the primary action — lift it visually above the others.
+              // Donate is the primary action, lift it visually above the others.
               card.primary
                 ? "border-coral bg-paper ring-1 ring-coral"
                 : "border-border bg-paper",

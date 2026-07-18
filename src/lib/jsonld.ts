@@ -1,7 +1,7 @@
 import { org } from "@/content/site";
 import { SITE_URL, SITE_DESCRIPTION } from "./seo";
 
-/** Sitewide NGO schema — rendered once in the root layout. */
+/** Sitewide NGO schema, rendered once in the root layout. */
 export function ngoJsonLd() {
   return {
     "@context": "https://schema.org",

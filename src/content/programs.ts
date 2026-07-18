@@ -42,7 +42,7 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "1.3B",
-      body: "people live with a significant disability — roughly one in six of us, at some point in life. Most barriers they meet were built, not born.",
+      body: "people live with a significant disability, roughly one in six of us, at some point in life. Most barriers they meet were built, not born.",
       source: "World Health Organization",
     },
     whatWeDo: [
@@ -52,7 +52,7 @@ export const programs: Program[] = [
       },
       {
         title: "Inclusive employment placement",
-        body: "Skills are common; access to employers is not. We coach candidates, audit workplaces for real accessibility, and place people in roles that fit their ability — not roles invented out of pity. The measure of success is a paycheck and a manager who forgets the accommodation was ever unusual.",
+        body: "Skills are common; access to employers is not. We coach candidates, audit workplaces for real accessibility, and place people in roles that fit their ability, not roles invented out of pity. The measure of success is a paycheck and a manager who forgets the accommodation was ever unusual.",
       },
       {
         title: "Independent living skills coaching",
@@ -65,7 +65,7 @@ export const programs: Program[] = [
         "is roughly how many of the 75 million people who need a wheelchair actually have access to one.",
       source: "World Health Organization",
     },
-    relatedStorySlug: "ananya",
+    relatedStorySlug: "yui",
     cta: {
       kind: "donate",
       label: "Fund a device and training",
@@ -83,7 +83,7 @@ export const programs: Program[] = [
     label: "Adaptive Sports & Recreation",
     tagline: "Where the movement began",
     summary:
-      "Our first program was not a clinic. It was a playing field — competition for people the world assumed could not compete. Adaptive sport builds the strength, community, and public visibility that everything else stands on.",
+      "Our first program was not a clinic. It was a playing field: competition for people the world assumed could not compete. Adaptive sport builds the strength, community, and public visibility that everything else stands on.",
     bullets: [
       "Parasports leagues and coaching",
       "Adaptive equipment access and fitting",
@@ -91,7 +91,7 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "9/10",
-      body: "children with disabilities in the developing world are still out of school — and out of the sport, play, and teamwork that build confidence early.",
+      body: "children with disabilities in the developing world are still out of school, and out of the sport, play, and teamwork that build confidence early.",
       source: "UNESCO",
     },
     whatWeDo: [
@@ -111,7 +111,7 @@ export const programs: Program[] = [
     stat: {
       value: "9/10",
       label:
-        "children with disabilities in the developing world are out of school — the same children most often left out of sport.",
+        "children with disabilities in the developing world are out of school, the same children most often left out of sport.",
       source: "UNESCO",
     },
     relatedStorySlug: "diego",
@@ -132,7 +132,7 @@ export const programs: Program[] = [
     label: "Senior Citizens",
     tagline: "Aging without isolation",
     summary:
-      "Longer lives should not mean lonelier ones. We help older adults stay connected, safe online, and in control of their own health — so aging is a stage of life, not a slow disappearance from it.",
+      "Longer lives should not mean lonelier ones. We help older adults stay connected, safe online, and in control of their own health, so aging is a stage of life, not a slow disappearance from it.",
     bullets: [
       "Digital literacy and scam-safety training",
       "Telehealth navigation support",
@@ -146,7 +146,7 @@ export const programs: Program[] = [
     whatWeDo: [
       {
         title: "Digital literacy and scam-safety training",
-        body: "A video call, a banking app, a government portal — these are lifelines, and they are also where older adults are targeted by fraud. We teach the skills and the warning signs together, patiently, until confidence replaces fear. Teaching a video call is teaching independence.",
+        body: "A video call, a banking app, a government portal. These are lifelines, and they are also where older adults are targeted by fraud. We teach the skills and the warning signs together, patiently, until confidence replaces fear. Teaching a video call is teaching independence.",
       },
       {
         title: "Telehealth navigation support",
@@ -154,7 +154,7 @@ export const programs: Program[] = [
       },
       {
         title: "Community and companionship circles",
-        body: "Isolation is a health risk with measurable effects. We convene regular in-person and virtual circles that give older adults company, purpose, and a reason to stay engaged — the simplest intervention we run, and one of the most effective.",
+        body: "Isolation is a health risk with measurable effects. We convene regular in-person and virtual circles that give older adults company, purpose, and a reason to stay engaged. It is the simplest intervention we run, and one of the most effective.",
       },
     ],
     stat: {
@@ -189,13 +189,13 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "Millions",
-      body: "of family caregivers provide unpaid care every day, absorbing physical, financial, and emotional strain that no one is measuring — until they can no longer continue.",
+      body: "of family caregivers provide unpaid care every day, absorbing physical, financial, and emotional strain that no one is measuring, until they can no longer continue.",
       source: "World Health Organization",
     },
     whatWeDo: [
       {
         title: "Respite care coordination",
-        body: "Everyone needs a break; caregivers rarely get one. We coordinate trusted respite cover so carers can rest, work, or simply have an hour that is theirs — often the difference between sustainable care and collapse.",
+        body: "Everyone needs a break; caregivers rarely get one. We coordinate trusted respite cover so carers can rest, work, or simply have an hour that is theirs, often the difference between sustainable care and collapse.",
       },
       {
         title: "Mental wellbeing counselling",
@@ -209,7 +209,7 @@ export const programs: Program[] = [
     stat: {
       value: "2 hrs",
       label:
-        '"Respite care gave me back two hours a week that were just mine." — a caregiver in São Paulo.',
+        '"Respite care gave me back two hours a week that were just mine.", a caregiver in São Paulo.',
       source: "WeEnable program participant",
     },
     relatedStorySlug: "marisa",
@@ -238,7 +238,7 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "2×",
-      body: "people with disabilities are roughly twice as likely to be unemployed — a gap driven by barriers in hiring and workplaces, not by ability.",
+      body: "people with disabilities are roughly twice as likely to be unemployed, a gap driven by barriers in hiring and workplaces, not by ability.",
       source: "World Health Organization",
     },
     whatWeDo: [
@@ -248,11 +248,11 @@ export const programs: Program[] = [
       },
       {
         title: "Inclusive employer partnerships",
-        body: "We build long-term relationships with employers who commit to inclusive hiring pipelines — and we hold them to measurable outcomes. A pilot in Toronto that redesigned a logistics hiring process is the model we scale.",
+        body: "We build long-term relationships with employers who commit to inclusive hiring pipelines, and we hold them to measurable outcomes. A pilot in Toronto that redesigned a logistics hiring process is the model we scale.",
       },
       {
         title: "Workplace accessibility audits",
-        body: "A job offer is meaningless if the workplace excludes the person on day one. We audit physical spaces, tools, and processes, then help employers fix what we find — before the first shift, not after the first complaint.",
+        body: "A job offer is meaningless if the workplace excludes the person on day one. We audit physical spaces, tools, and processes, then help employers fix what we find, before the first shift, not after the first complaint.",
       },
     ],
     stat: {
@@ -261,7 +261,7 @@ export const programs: Program[] = [
         "the unemployment rate for people with disabilities in many economies, driven by barriers rather than ability.",
       source: "World Health Organization",
     },
-    relatedStorySlug: "ananya",
+    relatedStorySlug: "yui",
     cta: {
       kind: "partner",
       label: "Build a hiring pipeline",
@@ -279,7 +279,7 @@ export const programs: Program[] = [
     label: "Digital & AI Accessibility",
     tagline: "Interfaces that adapt to people",
     summary:
-      "The web was not built for everyone, so we rebuild it. Our technology reads, describes, translates, and scans — turning one accessible interface into a service that reaches millions.",
+      "The web was not built for everyone, so we rebuild it. Our technology reads, describes, translates, and scans, turning one accessible interface into a service that reaches millions.",
     bullets: [
       "AI document reader and image describer",
       "Speech and language translation",
@@ -287,7 +287,7 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "285M",
-      body: "people are visually impaired and 39 million are blind — for them, most of the digital world is still built as if they were not there.",
+      body: "people are visually impaired and 39 million are blind, for them, most of the digital world is still built as if they were not there.",
       source: "World Health Organization",
     },
     whatWeDo: [
@@ -297,7 +297,7 @@ export const programs: Program[] = [
       },
       {
         title: "Speech and language translation",
-        body: "Real-time translation of language and intent removes two barriers at once — disability and distance. It lets a service designed in one place work for someone in another, in their own words.",
+        body: "Real-time translation of language and intent removes two barriers at once, disability and distance. It lets a service designed in one place work for someone in another, in their own words.",
       },
       {
         title: "Accessibility scanning for partner websites",
@@ -335,13 +335,13 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "Policy",
-      body: "is where inclusion becomes permanent. Without standards and law, every gain depends on the next well-meaning budget — and every barrier can quietly return.",
+      body: "is where inclusion becomes permanent. Without standards and law, every gain depends on the next well-meaning budget, and every barrier can quietly return.",
       source: "WeEnable",
     },
     whatWeDo: [
       {
         title: "Independent research and impact studies",
-        body: "We publish research with a clear method and honest findings — including what did not work. Credible evidence is what lets a government adopt a model with confidence rather than hope.",
+        body: "We publish research with a clear method and honest findings, including what did not work. Credible evidence is what lets a government adopt a model with confidence rather than hope.",
       },
       {
         title: "Government and public-sector advisory",
@@ -355,7 +355,7 @@ export const programs: Program[] = [
     stat: {
       value: "1",
       label:
-        "clause, well-written, can protect access for an entire city — the multiplier that policy gives every other program.",
+        "clause, well-written, can protect access for an entire city, the multiplier that policy gives every other program.",
       source: "WeEnable",
     },
     relatedStorySlug: "jakarta-tactile-paving",
@@ -376,7 +376,7 @@ export const programs: Program[] = [
     label: "Arts by Specially-Abled People",
     tagline: "Talent, not tragedy",
     summary:
-      "Disabled artists are artists. We represent, exhibit, and sell their work on its merits — replacing the charity frame with a market that takes talent seriously.",
+      "Disabled artists are artists. We represent, exhibit, and sell their work on its merits, replacing the charity frame with a market that takes talent seriously.",
     bullets: [
       "Curated exhibitions and performance showcases",
       "Artist representation and sales support",
@@ -384,7 +384,7 @@ export const programs: Program[] = [
     ],
     barrier: {
       stat: "Framing",
-      body: "is the barrier here. Work by disabled artists is too often received as inspiration rather than as art — praised, then priced at nothing.",
+      body: "is the barrier here. Work by disabled artists is too often received as inspiration rather than as art, praised, then priced at nothing.",
       source: "WeEnable",
     },
     whatWeDo: [
@@ -394,7 +394,7 @@ export const programs: Program[] = [
       },
       {
         title: "Artist representation and sales support",
-        body: "We represent artists commercially — pricing, sales, contracts, and rights — so their income reflects their talent. Recognition without a market is a hobby dressed as a career.",
+        body: "We represent artists commercially, pricing, sales, contracts, and rights, so their income reflects their talent. Recognition without a market is a hobby dressed as a career.",
       },
       {
         title: "Studio space and materials access",
@@ -404,7 +404,7 @@ export const programs: Program[] = [
     stat: {
       value: "100%",
       label:
-        "of sales proceeds are structured to reach the artist — talent paid as talent, not as charity.",
+        "of sales proceeds are structured to reach the artist, talent paid as talent, not as charity.",
       source: "WeEnable program design",
     },
     relatedStorySlug: "priya",
