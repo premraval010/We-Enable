@@ -11,15 +11,8 @@ export const org = {
   description:
     "A global movement removing the barriers between ability and opportunity.",
   founded: "2016",
-  address: {
-    line: "WeWork, 524 Broadway",
-    city: "New York",
-    region: "NY",
-    postalCode: "10012",
-    country: "United States",
-    countryCode: "US",
-  },
-  phones: ["+91 7020111060", "+44 777 6266 375"],
+  // Registered address intentionally omitted for now; may be added later.
+  phones: ["+44 777 6266 375"],
   emails: {
     general: "hello@weenable.org",
     partners: "partners@weenable.org",

@@ -40,8 +40,8 @@ illustrative and tracked here.
 
 | Item | Location | Value |
 |------|----------|-------|
-| Registered office | `src/content/site.ts` → `org.address` | WeWork, 524 Broadway, New York, NY 10012, US |
-| Phone numbers | `src/content/site.ts` → `org.phones` | +91 7020111060, +44 777 6266 375 |
+| Registered office | (removed from the site for now) | Not shown; add a confirmed address later if needed |
+| Phone number | `src/content/site.ts` → `org.phones` | +44 777 6266 375 (single number, shown on Contact) |
 | Social profiles | `src/content/site.ts` → `org.social` | facebook/creatingabilities.org, twitter/creatingability, instagram/creatingabilities, linkedin/creating-abilities |
 | Contact emails | `src/content/site.ts` → `org.emails` | hello@, partners@, press@, privacy@, legal@, accessibility@ weenable.org — confirm mailboxes are live & monitored |
 

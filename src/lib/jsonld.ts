@@ -11,14 +11,6 @@ export function ngoJsonLd() {
     url: SITE_URL,
     logo: `${SITE_URL}/brand/logo-mark.svg`,
     description: SITE_DESCRIPTION,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: org.address.line,
-      addressLocality: org.address.city,
-      addressRegion: org.address.region,
-      postalCode: org.address.postalCode,
-      addressCountry: org.address.countryCode,
-    },
     email: org.emails.general,
     telephone: org.phones[0],
     sameAs: [

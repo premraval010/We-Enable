@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { PageHero } from "@/components/sections/PageHero";
 import { Section } from "@/components/sections/Section";
 import { Reveal } from "@/components/Reveal";
@@ -71,18 +71,8 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-card border border-border bg-surface p-6">
-              <h2 className="text-lg font-extrabold">Registered office</h2>
-              <address className="mt-4 space-y-4 not-italic text-[15px] text-muted">
-                <span className="flex items-start gap-3">
-                  <MapPin aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-coral-text" />
-                  <span>
-                    {org.address.line}
-                    <br />
-                    {org.address.city}, {org.address.region} {org.address.postalCode}
-                    <br />
-                    {org.address.country}
-                  </span>
-                </span>
+              <h2 className="text-lg font-extrabold">Call us</h2>
+              <address className="mt-4 not-italic text-[15px] text-muted">
                 <span className="flex items-start gap-3">
                   <Phone aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-coral-text" />
                   <span className="flex flex-col">
