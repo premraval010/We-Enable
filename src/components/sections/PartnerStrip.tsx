@@ -22,16 +22,10 @@ export function PartnerStrip() {
             key={i}
             className="flex items-center gap-2 text-lg font-bold tracking-tight text-muted grayscale"
           >
-            <svg width="22" height="22" viewBox="-6 -12 62 68" aria-hidden="true">
-              <path
-                d="M 6 27.5 A 21.5 21.5 0 1 1 48 27.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="8"
-                strokeLinecap="round"
-              />
-              <line x1="6" y1="27.5" x2="6" y2="44" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
-              <line x1="48" y1="27.5" x2="48" y2="44" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
+            <svg width="24" height="24" viewBox="0 0 120 120" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M26 106V57a34 34 0 0 1 68 0v49" strokeWidth="13" />
+              <path d="M33 63H72" strokeWidth="11" />
+              <path d="M33 87H72" strokeWidth="11" />
             </svg>
             {name}
           </li>

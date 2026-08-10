@@ -11,53 +11,50 @@ type LogoProps = {
 };
 
 /**
- * "The Doorway" mark + wordmark. Exact SVG geometry, never redraw.
+ * "The Threshold" mark + wordmark. Exact SVG geometry (120-unit grid), never
+ * redraw: an arch drawn as one continuous stroke with two arms set inside it,
+ * so an E (and a W's rhythm) is discovered rather than announced.
  * The mark is always coral; "We" follows variant, "Enable" is always coral.
  */
+export function ThresholdMark({
+  size = 26,
+  className,
+}: {
+  size?: number;
+  className?: string;
+}) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 120 120"
+      aria-hidden="true"
+      className={cn("shrink-0", className)}
+    >
+      <g fill="none" stroke="var(--color-coral)">
+        <path d="M26 106V57a34 34 0 0 1 68 0v49" strokeWidth="13" />
+        <path d="M33 63H72" strokeWidth="11" />
+        <path d="M33 87H72" strokeWidth="11" />
+      </g>
+    </svg>
+  );
+}
+
 export function Logo({
   variant = "dark",
   size = 22,
   href = "/",
   className,
 }: LogoProps) {
-  const markSize = Math.round(size * 1.18);
+  const markSize = Math.round(size * 1.28);
   const weColor = variant === "light" ? "text-paper" : "text-ink";
 
   const content = (
-    <span className={cn("inline-flex items-center gap-[3px]", className)}>
-      <svg
-        width={markSize}
-        height={markSize}
-        viewBox="-3 -9 60 60"
-        aria-hidden="true"
-        className="shrink-0"
-      >
-        <path
-          d="M 6 27.5 A 21.5 21.5 0 1 1 48 27.5"
-          fill="none"
-          stroke="var(--color-coral)"
-          strokeWidth="8"
-          strokeLinecap="round"
-        />
-        <line
-          x1="6"
-          y1="27.5"
-          x2="6"
-          y2="44"
-          stroke="var(--color-coral)"
-          strokeWidth="8"
-          strokeLinecap="round"
-        />
-        <line
-          x1="48"
-          y1="27.5"
-          x2="48"
-          y2="44"
-          stroke="var(--color-coral)"
-          strokeWidth="8"
-          strokeLinecap="round"
-        />
-      </svg>
+    <span
+      className={cn("inline-flex items-center", className)}
+      style={{ gap: Math.round(size * 0.28) }}
+    >
+      <ThresholdMark size={markSize} />
       <span
         className={cn("font-heading font-extrabold tracking-[-0.01em]", weColor)}
         style={{ fontSize: size, lineHeight: 1 }}

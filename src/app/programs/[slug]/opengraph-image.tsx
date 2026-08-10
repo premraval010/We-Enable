@@ -28,11 +28,11 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           padding: "72px 80px",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <svg width="64" height="64" viewBox="-6 -12 62 68">
-            <path d="M 6 27.5 A 21.5 21.5 0 1 1 48 27.5" fill="none" stroke="#E27641" strokeWidth="8" strokeLinecap="round" />
-            <line x1="6" y1="27.5" x2="6" y2="44" stroke="#E27641" strokeWidth="8" strokeLinecap="round" />
-            <line x1="48" y1="27.5" x2="48" y2="44" stroke="#E27641" strokeWidth="8" strokeLinecap="round" />
+        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+          <svg width="72" height="72" viewBox="0 0 120 120" fill="none" stroke="#E27641">
+            <path d="M26 106V57a34 34 0 0 1 68 0v49" strokeWidth="13" />
+            <path d="M33 63H72" strokeWidth="11" />
+            <path d="M33 87H72" strokeWidth="11" />
           </svg>
           <div style={{ display: "flex", fontSize: 40, fontWeight: 800, color: "#FDFAF6", letterSpacing: -1 }}>
             We<span style={{ color: "#E27641" }}>Enable</span>

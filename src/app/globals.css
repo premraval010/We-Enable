@@ -9,8 +9,9 @@
   --color-ink: oklch(0.16 0.012 75);
   --color-paper: oklch(0.985 0.006 75);
   --color-coral: oklch(0.68 0.15 45);
-  /* Darkened coral that clears 4.5:1 on paper for body-size text */
-  --color-coral-text: oklch(0.53 0.16 40);
+  /* Signal text tint (brand: #9E4318). ~5.6:1 on paper — AA for small orange
+     text (eyebrows, labels, links); bright coral stays graphic-only. */
+  --color-coral-text: #9e4318;
   --color-teal: oklch(0.68 0.15 200);
   /* Darkened teal for TEXT: clears 4.5:1 on paper, surface, and teal tints */
   --color-teal-text: oklch(0.46 0.12 208);

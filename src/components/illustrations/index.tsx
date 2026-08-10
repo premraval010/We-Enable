@@ -85,26 +85,28 @@ export function IconReporting({ title, ...props }: IlloProps) {
   );
 }
 
-/** Large doorway, hero/empty-state motif. */
+/** The Threshold mark, hero/empty-state motif. */
 export function DoorwayGlyph({ title, ...props }: IlloProps) {
   return (
-    <svg viewBox="-6 -12 62 68" fill="none" {...svgProps(title)} {...props}>
-      <path d="M 6 27.5 A 21.5 21.5 0 1 1 48 27.5" stroke={coral} strokeWidth="8" strokeLinecap="round" />
-      <line x1="6" y1="27.5" x2="6" y2="44" stroke={coral} strokeWidth="8" strokeLinecap="round" />
-      <line x1="48" y1="27.5" x2="48" y2="44" stroke={coral} strokeWidth="8" strokeLinecap="round" />
+    <svg viewBox="0 0 120 120" fill="none" {...svgProps(title)} {...props}>
+      <path d="M26 106V57a34 34 0 0 1 68 0v49" stroke={coral} strokeWidth="13" />
+      <path d="M33 63H72" stroke={coral} strokeWidth="11" />
+      <path d="M33 87H72" stroke={coral} strokeWidth="11" />
     </svg>
   );
 }
 
-/** 404, a doorway ajar, teal path leading out. */
+/** 404, the Threshold mark with a teal path leading out to another door. */
 export function NotFoundIllo({ title, ...props }: IlloProps) {
   return (
-    <svg viewBox="0 0 200 160" fill="none" {...svgProps(title)} {...props}>
-      <path d="M 40 120 A 46 46 0 0 1 132 120" stroke={coral} strokeWidth="9" strokeLinecap="round" />
-      <line x1="40" y1="120" x2="40" y2="146" stroke={coral} strokeWidth="9" strokeLinecap="round" />
-      <line x1="132" y1="120" x2="132" y2="146" stroke={coral} strokeWidth="9" strokeLinecap="round" />
-      <path d="M 132 146 C 160 146, 168 120, 186 118" stroke={teal} strokeWidth="6" strokeLinecap="round" strokeDasharray="2 12" />
-      <circle cx="186" cy="118" r="5" fill={teal} />
+    <svg viewBox="0 0 200 140" fill="none" {...svgProps(title)} {...props}>
+      <g stroke={coral}>
+        <path d="M26 118V64a34 34 0 0 1 68 0v54" strokeWidth="12" />
+        <path d="M33 70H72" strokeWidth="10" />
+        <path d="M33 94H72" strokeWidth="10" />
+      </g>
+      <path d="M 100 122 C 132 122, 150 96, 186 94" stroke={teal} strokeWidth="6" strokeLinecap="round" strokeDasharray="2 12" />
+      <circle cx="186" cy="94" r="5" fill={teal} />
     </svg>
   );
 }
