@@ -150,6 +150,67 @@ h4 {
   animation: scroll-cue 1.8s ease-in-out infinite;
 }
 
+/* ------------------------------------------------------------------
+   On-site accessibility preferences (driven by the Accessibility panel;
+   set as data-attributes on <html>, persisted in localStorage).
+   ------------------------------------------------------------------ */
+
+/* Text size — scales rem-based type across the site */
+:root[data-a11y-text="2"] {
+  font-size: 112.5%;
+}
+:root[data-a11y-text="3"] {
+  font-size: 125%;
+}
+:root[data-a11y-text="4"] {
+  font-size: 140%;
+}
+
+/* More spacing — easier for low-vision and dyslexic readers */
+:root[data-a11y-spacing="loose"] body {
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  word-spacing: 0.08em;
+}
+
+/* Highlight links — underline text links (not pill buttons, logo, icons) */
+:root[data-a11y-links="on"] a:not(.rounded-full):not([aria-label]) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* High contrast — darken secondary text, strengthen borders, underline links */
+:root[data-a11y-contrast="high"] {
+  --color-muted: oklch(0.3 0.02 75);
+  --color-muted-dark: oklch(0.94 0.01 75);
+  --color-border: oklch(0.68 0.02 75);
+  --color-border-dark: oklch(0.62 0.016 75);
+  --color-coral-text: #7a3211;
+  --color-teal-text: oklch(0.4 0.12 208);
+}
+:root[data-a11y-contrast="high"] a:not(.rounded-full):not([aria-label]) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+:root[data-a11y-contrast="high"] :focus-visible {
+  outline-width: 3px;
+}
+
+/* Reduce motion — mirrors the prefers-reduced-motion behaviour on demand */
+:root[data-a11y-motion="reduce"] .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+:root[data-a11y-motion="reduce"] *,
+:root[data-a11y-motion="reduce"] *::before,
+:root[data-a11y-motion="reduce"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
 /* Selection */
 ::selection {
   background: var(--color-coral);

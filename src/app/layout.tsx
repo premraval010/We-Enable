@@ -9,6 +9,10 @@ import { ngoJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AccessibilityWidget } from "@/components/AccessibilityWidget";
+
+/** Applies saved accessibility preferences before first paint (no flash). */
+const A11Y_BOOTSTRAP = `try{var s=JSON.parse(localStorage.getItem('weenable-a11y')||'{}');var r=document.documentElement;if(s.text>1)r.setAttribute('data-a11y-text',String(s.text));if(s.contrast)r.setAttribute('data-a11y-contrast','high');if(s.spacing)r.setAttribute('data-a11y-spacing','loose');if(s.links)r.setAttribute('data-a11y-links','on');if(s.motion)r.setAttribute('data-a11y-motion','reduce');}catch(e){}`;
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -62,6 +66,9 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${manrope.variable} ${publicSans.variable} h-full`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: A11Y_BOOTSTRAP }} />
+      </head>
       <body className="flex min-h-full flex-col">
         <JsonLd data={ngoJsonLd()} />
         <JsonLd data={websiteJsonLd()} />
@@ -71,6 +78,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <AccessibilityWidget />
         <Analytics />
         <SpeedInsights />
       </body>
