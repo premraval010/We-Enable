@@ -23,6 +23,15 @@ const builtIn = [
   "Reduced-motion support that respects your system preference.",
 ];
 
+const tools = [
+  "Increase the text size in steps, up to 140%.",
+  "Turn on a higher-contrast colour mode.",
+  "Add more line and letter spacing for easier reading.",
+  "Highlight every link with an underline.",
+  "Reduce or stop on-screen motion and animation.",
+  "Have the page read aloud with your device's voice.",
+];
+
 export default function AccessibilityPage() {
   return (
     <>
@@ -67,6 +76,40 @@ export default function AccessibilityPage() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-extrabold sm:text-3xl">
+              Adjust this site to suit you
+            </h2>
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted">
+              <p>
+                Every page carries an accessibility panel, opened from the{" "}
+                <span className="font-semibold text-ink">accessibility button</span>{" "}
+                in the bottom-right corner. Your choices are remembered on your
+                device and applied the next time you visit. From it you can:
+              </p>
+            </div>
+            <ul className="mt-4 space-y-3">
+              {tools.map((item) => (
+                <li
+                  key={item}
+                  className="flex gap-3 text-lg leading-relaxed text-muted"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="mt-2.5 size-2 shrink-0 rounded-full bg-teal"
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-lg leading-relaxed text-muted">
+              These controls sit on top of, not instead of, your own assistive
+              technology. The site is built to work with screen readers such as
+              NVDA, JAWS, and VoiceOver, and with your browser and operating
+              system settings.
+            </p>
           </div>
 
           <div>
