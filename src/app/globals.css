@@ -12,6 +12,9 @@
   /* Signal text tint (brand: #9E4318). ~5.6:1 on paper — AA for small orange
      text (eyebrows, labels, links); bright coral stays graphic-only. */
   --color-coral-text: #9e4318;
+  /* Logo wordmark on light backgrounds: brightest coral that still clears
+     4.5:1 on paper (4.7:1) — only slightly darker than the bright mark. */
+  --color-coral-wordmark: #b45620;
   --color-teal: oklch(0.68 0.15 200);
   /* Darkened teal for TEXT: clears 4.5:1 on paper, surface, and teal tints */
   --color-teal-text: oklch(0.46 0.12 208);

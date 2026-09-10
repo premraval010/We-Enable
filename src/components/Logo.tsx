@@ -53,8 +53,9 @@ export function Logo({
   const weColor = variant === "light" ? "text-paper" : "text-ink";
   const taglineColor = variant === "light" ? "text-muted-dark" : "text-muted";
   // Bright coral reads well on dark backgrounds; on light ones the wordmark
-  // uses the darker signal tint so "Enable" is readable and passes contrast.
-  const enableColor = variant === "light" ? "text-coral" : "text-coral-text";
+  // uses a slightly darker coral that stays readable and passes contrast.
+  const enableColor =
+    variant === "light" ? "text-coral" : "text-coral-wordmark";
 
   const content = (
     <span
