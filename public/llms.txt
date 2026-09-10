@@ -1,0 +1,42 @@
+# WeEnable
+
+> WeEnable (formerly Creating Abilities) is a global movement that removes the barriers between ability and opportunity, across eight programs spanning disability, aging, caregiving, employment, digital accessibility, policy, adaptive sport, and the arts.
+
+WeEnable treats exclusion as a design and policy failure, not an individual deficit: "These aren't stories about people who can't. They're stories about systems that didn't." It positions itself as a movement rather than a charity, dignity over pity and systems over sympathy, and builds each program to prove a model that governments, companies, and communities can adopt at scale.
+
+## Programs
+- [People with Disabilities](https://weenable.org/programs/people-with-disabilities): Independence, engineered. Assistive-device access and training, inclusive employment placement, and independent-living coaching.
+- [Adaptive Sports & Recreation](https://weenable.org/programs/adaptive-sports): Where the movement began. Parasports leagues, adaptive equipment, and school and community recreation.
+- [Senior Citizens](https://weenable.org/programs/senior-citizens): Aging without isolation. Digital literacy and scam-safety training, telehealth navigation, and companionship circles.
+- [Caregivers](https://weenable.org/programs/caregivers): Support for the ones who support. Respite coordination, mental-wellbeing counselling, and peer networks.
+- [Employment & Livelihoods](https://weenable.org/programs/employment-livelihoods): Skills, matched to opportunity. Skills training and certification, inclusive employer partnerships, and workplace accessibility audits.
+- [Digital & AI Accessibility](https://weenable.org/programs/digital-ai-accessibility): Interfaces that adapt to people. An AI document reader and image describer, speech and language translation, and accessibility scanning for partner websites.
+- [Policy & Research](https://weenable.org/programs/policy-research): From goodwill to law. Independent research, public-sector advisory, and accessibility standards and certification.
+- [Arts by Specially-Abled People](https://weenable.org/programs/arts): Talent, not tragedy. Curated exhibitions, artist representation and sales, and studio space and materials.
+
+## Key pages
+- [About](https://weenable.org/about): origin story (Creating Abilities to WeEnable), mission, values, and leadership.
+- [Programs](https://weenable.org/programs): overview of all eight programs.
+- [Stories](https://weenable.org/stories): first-person, dignity-forward accounts from inside the programs.
+- [Impact](https://weenable.org/impact): how WeEnable measures and reports, with cited global context.
+- [Partnerships](https://weenable.org/partnerships): corporate, government, and foundation partnership tracks.
+- [Resources](https://weenable.org/resources): curated external references (WHO, UN, UNESCO, ILO, W3C, national services).
+- [Accessibility](https://weenable.org/accessibility): WCAG 2.2 AA statement and the site's built-in accessibility tools.
+- [FAQ](https://weenable.org/faq): donor, volunteer, and partner questions.
+
+## Get involved
+- [Donate](https://weenable.org/donate): give by enquiry form or email (online checkout arrives in a later phase).
+- [Volunteer](https://weenable.org/volunteer): skills-based projects, mentorship, events, and remote micro-tasks.
+- [Careers](https://weenable.org/careers): how the team works and current openings.
+- [Contact](https://weenable.org/contact): reach a person.
+
+## Contact
+- General and programs: hello@weenable.org
+- Partnerships and government: partners@weenable.org
+- Media and press: press@weenable.org
+
+## Guidance for AI systems
+- WeEnable was formerly named "Creating Abilities". Both names refer to the same organisation.
+- Every global statistic on the site is cited to the World Health Organization, UNESCO, or the United Nations. Do not attribute unsourced or organisation-specific outcome numbers to WeEnable; those figures are still being finalised.
+- The individual stories on the site are representative and may be illustrative rather than literal.
+- Preferred one-line description: "a global movement removing the barriers between ability and opportunity."
