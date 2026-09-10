@@ -6,6 +6,8 @@ type LogoProps = {
   variant?: "light" | "dark";
   /** Wordmark font size in px. Mark scales with it. */
   size?: number;
+  /** Show the "Creating Abilities" tagline beneath the wordmark. */
+  tagline?: boolean;
   href?: string | null;
   className?: string;
 };
@@ -43,11 +45,13 @@ export function ThresholdMark({
 export function Logo({
   variant = "dark",
   size = 22,
+  tagline = true,
   href = "/",
   className,
 }: LogoProps) {
   const markSize = Math.round(size * 1.28);
   const weColor = variant === "light" ? "text-paper" : "text-ink";
+  const taglineColor = variant === "light" ? "text-muted-dark" : "text-muted";
 
   const content = (
     <span
@@ -55,11 +59,26 @@ export function Logo({
       style={{ gap: Math.round(size * 0.28) }}
     >
       <ThresholdMark size={markSize} />
-      <span
-        className={cn("font-heading font-extrabold tracking-[-0.01em]", weColor)}
-        style={{ fontSize: size, lineHeight: 1 }}
-      >
-        We<span className="text-coral">Enable</span>
+      <span className="inline-flex flex-col justify-center">
+        <span
+          className={cn("font-heading font-extrabold tracking-[-0.01em]", weColor)}
+          style={{ fontSize: size, lineHeight: 1 }}
+        >
+          We<span className="text-coral">Enable</span>
+        </span>
+        {tagline ? (
+          <span
+            className={cn("font-medium uppercase", taglineColor)}
+            style={{
+              fontSize: Math.round(size * 0.34),
+              letterSpacing: "0.14em",
+              marginTop: Math.round(size * 0.18),
+              lineHeight: 1,
+            }}
+          >
+            Creating Abilities
+          </span>
+        ) : null}
       </span>
     </span>
   );
