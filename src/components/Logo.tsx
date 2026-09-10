@@ -52,6 +52,9 @@ export function Logo({
   const markSize = Math.round(size * 1.28);
   const weColor = variant === "light" ? "text-paper" : "text-ink";
   const taglineColor = variant === "light" ? "text-muted-dark" : "text-muted";
+  // Bright coral reads well on dark backgrounds; on light ones the wordmark
+  // uses the darker signal tint so "Enable" is readable and passes contrast.
+  const enableColor = variant === "light" ? "text-coral" : "text-coral-text";
 
   const content = (
     <span
@@ -64,7 +67,7 @@ export function Logo({
           className={cn("font-heading font-extrabold tracking-[-0.01em]", weColor)}
           style={{ fontSize: size, lineHeight: 1 }}
         >
-          We<span className="text-coral">Enable</span>
+          We<span className={enableColor}>Enable</span>
         </span>
         {tagline ? (
           <span
