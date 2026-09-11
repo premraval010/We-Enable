@@ -63,7 +63,7 @@ export function Logo({
       style={{ gap: Math.round(size * 0.28) }}
     >
       <ThresholdMark size={markSize} />
-      <span className="inline-flex flex-col justify-center">
+      <span className="inline-flex flex-col items-center justify-center">
         <span
           className={cn("font-heading font-extrabold tracking-[-0.01em]", weColor)}
           style={{ fontSize: size, lineHeight: 1 }}
@@ -72,15 +72,15 @@ export function Logo({
         </span>
         {tagline ? (
           <span
-            className={cn("font-medium uppercase", taglineColor)}
+            className={cn("font-medium italic", taglineColor)}
             style={{
-              fontSize: Math.round(size * 0.34),
-              letterSpacing: "0.14em",
-              marginTop: Math.round(size * 0.18),
+              fontSize: Math.round(size * 0.36),
+              letterSpacing: "0.01em",
+              marginTop: Math.round(size * 0.16),
               lineHeight: 1,
             }}
           >
-            Creating Abilities
+            &hellip; Creating Abilities &hellip;
           </span>
         ) : null}
       </span>
